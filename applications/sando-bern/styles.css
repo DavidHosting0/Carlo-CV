@@ -1,4 +1,4 @@
-/* —— Design tokens —— */
+/* -- Design tokens -- */
 :root {
   --ink: #1c1a17;
   --ink-muted: #5c574f;
@@ -43,7 +43,7 @@ body {
   line-height: 1.48;
 }
 
-/* —— Screen toolbar —— */
+/* -- Screen toolbar -- */
 .screen-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -120,11 +120,35 @@ body {
   letter-spacing: 0.02em;
 }
 
-.btn-print:hover {
+.btn-print:hover:not(:disabled) {
   background: var(--accent-deep);
 }
 
-/* —— Ideal banner —— */
+.btn-print:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+/* Cleaner look while html2pdf captures the pages */
+body.pdf-exporting .page,
+body.pdf-exporting .page-cv,
+body.pdf-exporting .page-letter,
+body.pdf-exporting .page-zeugnisse {
+  box-shadow: none !important;
+  margin: 0 0 0.5mm !important;
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+body.pdf-exporting .page-cv::before,
+body.pdf-exporting .page-letter::before,
+body.pdf-exporting .page-zeugnisse::before {
+  display: none !important;
+  content: none !important;
+}
+
+
+/* -- Ideal banner -- */
 .ideal-banner {
   max-width: var(--page-width);
   margin: 0 auto 1rem;
@@ -146,7 +170,11 @@ body {
   text-transform: uppercase;
 }
 
-/* —— Pages —— */
+.ideal-banner[hidden] {
+  display: none !important;
+}
+
+/* -- Pages -- */
 .page {
   width: var(--page-width);
   min-height: 297mm;
@@ -175,7 +203,7 @@ body {
     var(--paper-pure);
 }
 
-/* —— Hero —— */
+/* -- Hero -- */
 .cv-hero {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -247,6 +275,11 @@ body {
   border-radius: var(--radius);
 }
 
+.photo-placeholder[hidden],
+.photo-img[hidden] {
+  display: none !important;
+}
+
 .photo-placeholder {
   display: flex;
   flex-direction: column;
@@ -270,7 +303,7 @@ body {
   opacity: 0.85;
 }
 
-/* —— Sections —— */
+/* -- Sections -- */
 .cv-section {
   margin-bottom: 1.2rem;
 }
@@ -444,7 +477,7 @@ body {
   color: var(--ink-muted);
 }
 
-/* —— Motivationsschreiben —— */
+/* -- Motivationsschreiben -- */
 .page-letter {
   page-break-before: always;
 }
@@ -501,13 +534,36 @@ body {
 
 .letter-close {
   margin-top: 1.5rem !important;
-  margin-bottom: 2.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.letter-sign-block {
+  margin: 0.25rem 0 0.75rem;
+  min-height: 18mm;
+}
+
+.letter-sign-img {
+  display: block;
+  height: 24mm;
+  width: auto;
+  max-width: 90mm;
+  object-fit: contain;
+  object-position: left center;
+  filter: none !important;
+  opacity: 1 !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 .letter-sign {
   font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.letter-sign[hidden],
+.letter-sign-img[hidden] {
+  display: none !important;
 }
 
 .ideal-footnote {
@@ -519,7 +575,7 @@ body {
   line-height: 1.35;
 }
 
-/* —— Zeugnisse —— */
+/* -- Zeugnisse -- */
 .page-zeugnisse {
   page-break-before: always;
 }
@@ -582,8 +638,8 @@ body {
   background: #fff;
 }
 
-/* —— Responsive (screen) —— */
-@media (max-width: 720px) {
+/* -- Responsive (screen only - print must keep desktop layout) -- */
+@media screen and (max-width: 720px) {
   body {
     background: var(--paper);
   }
@@ -616,71 +672,183 @@ body {
   }
 }
 
-/* —— Print / PDF —— */
+/* -- Print / PDF -- */
 @media print {
+  html {
+    font-size: 12.5px !important;
+  }
+
   body {
-    background: none;
-    margin: 0;
+    background: none !important;
+    margin: 0 !important;
+    color: #000;
   }
 
   .no-print,
-  .screen-toolbar {
+  .screen-toolbar,
+  .ideal-banner,
+  .letter-footer,
+  .ideal-footnote {
     display: none !important;
   }
 
-  .ideal-banner {
-    max-width: none;
-    margin: 0 0 4mm;
-    padding: 2.5mm 3mm;
-    box-shadow: none;
-    break-inside: avoid;
+  /* Feste Seitentrennung: 1 Lebenslauf | 2 Anschreiben | 3+ Zeugnisse */
+  .page-cv {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .page-letter {
+    page-break-before: always;
+    page-break-after: always;
+    break-before: page;
+    break-after: page;
+  }
+
+  .page-zeugnisse {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .cv-hero {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    align-items: start !important;
+    gap: 0.8rem !important;
+    padding-bottom: 0.7rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .cv-hero h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .cv-hero__photo {
+    order: 0 !important;
+    width: 28mm !important;
+    height: 36mm !important;
+    justify-self: end;
+  }
+
+  .cv-columns {
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr !important;
+    gap: 1rem !important;
   }
 
   .page {
-    width: auto;
-    min-height: auto;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-    background: #fff;
+    width: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    background-image: none !important;
   }
 
   .page-cv,
   .page-letter,
   .page-zeugnisse {
-    background: #fff;
+    background: #fff !important;
+    background-image: none !important;
   }
 
   .page-cv::before,
   .page-letter::before,
   .page-zeugnisse::before {
-    display: none;
+    display: none !important;
   }
 
-  .page-letter,
-  .page-zeugnisse {
-    page-break-before: always;
-    padding-top: 2mm;
+  .cv-section {
+    margin-bottom: 0.65rem !important;
   }
 
-  .cv-hero,
-  .job,
-  .cv-section,
-  .zeugnis {
+  .cv-section h2 {
+    margin-bottom: 0.3rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .profil-text {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .job {
     break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 0.55rem !important;
+    padding-bottom: 0.45rem !important;
   }
 
-  .zeugnis-img {
-    max-height: 250mm;
-    border-color: #ccc;
+  .job-bullets {
+    font-size: 0.8rem !important;
+  }
+
+  .job-bullets li {
+    margin-bottom: 0.1rem !important;
+  }
+
+  .skills-list li {
+    font-size: 0.72rem !important;
+    padding: 0.18rem 0.4rem !important;
+  }
+
+  .projekt {
+    margin-bottom: 0.35rem !important;
+  }
+
+  .projekt-text {
+    font-size: 0.78rem !important;
   }
 
   .letter-body {
-    max-width: none;
+    max-width: none !important;
+    font-size: 0.92rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .zeugnisse-head {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .zeugnisse-intro {
+    font-size: 0.78rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  /* Zeugnis 1 unter Intro, Zeugnis 2 auf neuer Seite */
+  .zeugnis {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 0 0 0.5rem !important;
+  }
+
+  .zeugnis + .zeugnis {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 0;
+  }
+
+  .zeugnis-img {
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 210mm !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: top center !important;
+    border: 1px solid #ccc !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .zeugnis + .zeugnis .zeugnis-img {
+    max-height: 250mm !important;
   }
 
   @page {
     size: A4;
-    margin: 12mm 14mm;
+    margin: 10mm 12mm;
   }
 }

@@ -2,7 +2,7 @@
   "use strict";
 
   if (typeof getCvContent !== "function") {
-    console.error("getCvContent fehlt — content.js laden?");
+    console.error("getCvContent fehlt: content.js laden?");
     return;
   }
 
@@ -38,24 +38,18 @@
     return "de";
   }
 
-  function setLangButtons(lang) {
-    document.querySelectorAll("[data-lang]").forEach((btn) => {
-      const active = btn.getAttribute("data-lang") === lang;
-      btn.classList.toggle("is-active", active);
-      btn.setAttribute("aria-pressed", active ? "true" : "false");
-    });
-  }
-
   function render(lang) {
     const c = getCvContent(lang);
     const ui = c.ui || {};
     document.documentElement.lang = lang === "en" ? "en" : "de";
-    setLangButtons(lang);
 
-    text("print-hint", ui.printHint || "");
-    text("print-btn-label", ui.printBtn || "Print / PDF");
     text("meta-label", c.meta?.kennzeichnung || "");
     text("meta-hinweis", c.meta?.hinweis || "");
+    const banner = $("ideal-banner");
+    if (banner) {
+      const hasBanner = Boolean(c.meta?.kennzeichnung || c.meta?.hinweis);
+      banner.hidden = !hasBanner;
+    }
 
     text("heading-profil", ui.profil);
     text("heading-erfahrung", ui.erfahrung);
@@ -86,7 +80,7 @@
       : null;
     text(
       "hero-meta",
-      [c.alter ? `${c.alter} ${ui.alterSuffix || ""}`.trim() : null, nationalitaet, wohnort]
+      [c.alter ? `${c.alter} ${ui.alterSuffix || ""}`.trim() : null, nationalitaet]
         .filter(Boolean)
         .join(" · ")
     );
@@ -95,7 +89,6 @@
     if (contact) {
       contact.innerHTML = "";
       const items = [
-        nationalitaet,
         wohnort,
         c.telefon
           ? { href: `tel:${c.telefon.replace(/\s/g, "")}`, label: c.telefon }
@@ -121,8 +114,13 @@
     const placeholder = $("photo-placeholder");
     if (c.foto && img && placeholder) {
       img.src = c.foto;
+      img.alt = c.name ? `Bewerbungsfoto ${c.name}` : "Bewerbungsfoto";
       img.hidden = false;
       placeholder.hidden = true;
+      img.onerror = () => {
+        img.hidden = true;
+        placeholder.hidden = false;
+      };
     } else if (img && placeholder) {
       img.hidden = true;
       placeholder.hidden = false;
@@ -268,7 +266,7 @@
     text(
       "letter-betreff",
       `${ui.betreffPrefix || "Application"} ${c.zielposition}${
-        c.arbeitgeberZiel ? ` — ${c.arbeitgeberZiel}` : ""
+        c.arbeitgeberZiel ? ` | ${c.arbeitgeberZiel}` : ""
       }`
     );
 
@@ -278,8 +276,38 @@
     text("motivation-absatz2", m.absatz2 || "");
     text("motivation-absatz3", m.absatz3 || "");
     text("motivation-gruss", m.gruss || "");
-    text("motivation-unterschrift", m.unterschrift || c.name);
+
+    const signImg = $("motivation-sign-img");
+    const signText = $("motivation-unterschrift");
+    const signFile = c.unterschriftBild || "carlosignature.png";
+    if (signImg) {
+      signImg.src = signFile;
+      signImg.alt = m.unterschrift || c.name || "Unterschrift";
+      signImg.removeAttribute("hidden");
+      signImg.hidden = false;
+      if (signText) {
+        signText.textContent = "";
+        signText.hidden = true;
+      }
+      signImg.onerror = () => {
+        signImg.hidden = true;
+        if (signText) {
+          signText.hidden = false;
+          signText.textContent = m.unterschrift || c.name || "";
+        }
+      };
+    } else if (signText) {
+      signText.hidden = false;
+      signText.textContent = m.unterschrift || c.name || "";
+    }
+
     text("letter-footnote", c.meta?.hinweis || "");
+    const footnote = $("letter-footnote");
+    if (footnote) {
+      footnote.hidden = !c.meta?.hinweis;
+      const footer = footnote.closest(".letter-footer");
+      if (footer) footer.hidden = !c.meta?.hinweis;
+    }
 
     const zeugnisseSection = $("zeugnisse");
     const zeugnisseList = $("zeugnisse-list");
@@ -307,9 +335,10 @@
 
           const zImg = document.createElement("img");
           zImg.src = z.datei;
-          zImg.alt = z.titel || "";
+          zImg.alt = "";
           zImg.className = "zeugnis-img";
-          zImg.loading = "lazy";
+          zImg.loading = "eager";
+          zImg.decoding = "sync";
           figure.appendChild(zImg);
 
           zeugnisseList.appendChild(figure);
@@ -317,26 +346,25 @@
       }
     }
 
-    document.title = `${lang === "en" ? "Application" : "Bewerbung"} — ${c.name}${
-      c.zielposition ? ` · ${c.zielposition}` : ""
+    document.title = `${lang === "en" ? "Application" : "Bewerbung"} | ${c.name}${
+      c.zielposition ? ` | ${c.zielposition}` : ""
     }`;
   }
 
-  function switchLang(lang) {
-    const next = lang === "en" ? "en" : "de";
-    try {
-      localStorage.setItem(STORAGE_KEY, next);
-    } catch {
-      /* ignore */
-    }
-    const url = new URL(window.location.href);
-    url.searchParams.set("lang", next);
-    window.history.replaceState({}, "", url);
-    render(next);
-  }
-
-  document.querySelectorAll("[data-lang]").forEach((btn) => {
-    btn.addEventListener("click", () => switchLang(btn.getAttribute("data-lang")));
+  window.__cvTitle = "";
+  window.addEventListener("beforeprint", () => {
+    window.__cvTitle = document.title;
+    document.title = " ";
+    // Zeugnisbilder vor dem Druck nachladen
+    document.querySelectorAll(".zeugnis-img").forEach((img) => {
+      if (!img.complete) {
+        const src = img.getAttribute("src");
+        if (src) img.src = src;
+      }
+    });
+  });
+  window.addEventListener("afterprint", () => {
+    if (window.__cvTitle) document.title = window.__cvTitle;
   });
 
   render(readLang());

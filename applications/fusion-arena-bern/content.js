@@ -1,15 +1,16 @@
 /**
- * Ideal-Bewerbungsmappe — DE + EN
- * Fusion Arena Bern GmbH — Initiativbewerbung (Team / Guest Host)
+ * Ideal-Bewerbungsmappe - DE + EN
+ * Fusion Arena Bern GmbH - Initiativbewerbung (Team / Guest Host)
  */
 const CV_SHARED = {
   name: "Carlo Alexander Koch",
   alter: 19,
   ort: "Bottigenstrasse 300, Bern",
-  telefon: "+49 176 822 96533",
-  email: "Koch.carlo@bluewin.ch",
+  telefon: "+41 78 604 64 95",
+  email: "carlo.koch@bluewin.ch",
   foto: "Profilbild.png",
-  arbeitgeberZiel: "Fusion Arena Bern GmbH — Zeughausgasse 27, 3011 Bern",
+  unterschriftBild: "carlosignature.png",
+  arbeitgeberZiel: "Fusion Arena Bern GmbH - Zeughausgasse 27, 3011 Bern",
 };
 
 const CV_I18N = {
@@ -29,7 +30,7 @@ const CV_I18N = {
       alterSuffix: "Jahre",
       nationalitaetLabel: "Nationalität",
       wohnortPrefix: "wohnhaft in",
-      betreffPrefix: "Initiativbewerbung —",
+      betreffPrefix: "Initiativbewerbung -",
       printHint: "PDF mit einem Klick speichern (ohne Browser Kopf und Fußzeilen).",
       printBtn: "PDF herunterladen",
       langDe: "Deutsch",
@@ -72,7 +73,7 @@ const CV_I18N = {
         rolle: "Minijob VR Host / Gästebetreuung",
         firma: "EVA Köln West",
         ort: "Köln",
-        zeitraum: "02.2026 – 07.2026",
+        zeitraum: "02.2026 - 07.2026",
         bullets: [
           "Direkt nach dem Schulabschluss mehrere Monate Gäste durch VR Sessions begleitet",
           "Headsets und Controllers einstellen, Spielbereich erklären, Erstspielern helfen",
@@ -83,7 +84,7 @@ const CV_I18N = {
         rolle: "Minijob Betrieb und digitale Prozesse",
         firma: "Burgerwerk",
         ort: "Deutschland",
-        zeitraum: "09.2025 – 01.2026",
+        zeitraum: "09.2025 - 01.2026",
         bullets: [
           "Hohes Gästeaufkommen: Überblick behalten, Prioritäten setzen, Servicequalität halten",
           "Digitales System programmiert, eingeführt und Mitarbeitende geschult, also Onboarding und Technik erklären für Laien",
@@ -94,7 +95,7 @@ const CV_I18N = {
         rolle: "Minijob Service Unterstützung",
         firma: "Restaurant Am Fels",
         ort: "Engelskirchen Loope",
-        zeitraum: "03.2025 – 08.2025",
+        zeitraum: "03.2025 - 08.2025",
         bullets: [
           "Abläufe für Gäste und Team reibungslos halten, also Warteschlange, Timing und die nächste Gruppe vorbereiten",
           "Ordnung und Hygiene am Arbeitsplatz und Stationen wieder einsatzbereit machen",
@@ -157,7 +158,7 @@ const CV_I18N = {
       alterSuffix: "years old",
       nationalitaetLabel: "Nationality",
       wohnortPrefix: "currently living in",
-      betreffPrefix: "Unsolicited application —",
+      betreffPrefix: "Unsolicited application -",
       printHint: "Download the PDF with one click (no browser headers or footers).",
       printBtn: "Download PDF",
       langDe: "Deutsch",
@@ -200,7 +201,7 @@ const CV_I18N = {
         rolle: "Mini job VR host and guest care",
         firma: "EVA Köln West",
         ort: "Cologne",
-        zeitraum: "02.2026 – 07.2026",
+        zeitraum: "02.2026 - 07.2026",
         bullets: [
           "Right after school, several months guiding guests through VR sessions",
           "Fitted headsets and controllers, explained the play area, helped first timers",
@@ -211,7 +212,7 @@ const CV_I18N = {
         rolle: "Mini job operations and digital processes",
         firma: "Burgerwerk",
         ort: "Germany",
-        zeitraum: "09.2025 – 01.2026",
+        zeitraum: "09.2025 - 01.2026",
         bullets: [
           "High guest volume: keep overview, set priorities, protect service quality",
           "Programmed a digital system, rolled it out and trained staff, including onboarding and explaining tech to non experts",
@@ -222,7 +223,7 @@ const CV_I18N = {
         rolle: "Mini job service support",
         firma: "Restaurant Am Fels",
         ort: "Engelskirchen Loope",
-        zeitraum: "03.2025 – 08.2025",
+        zeitraum: "03.2025 - 08.2025",
         bullets: [
           "Kept guest and team flow smooth, including queue, timing and preparing the next group",
           "Workplace order and hygiene, reset stations for the next guests",

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>PDF Preview</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs" type="module"></script>
+  <style>
+    body { margin: 0; background: #333; }
+    canvas { display: block; margin: 12px auto; max-width: 100%; box-shadow: 0 4px 20px #0008; }
+  </style>
+</head>
+<body>
+  <div id="pages"></div>
+  <script type="module">
+    import * as pdfjsLib from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.mjs";
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.mjs";
+    const url = "./anschreiben.pdf";
+    const pdf = await pdfjsLib.getDocument(url).promise;
+    const host = document.getElementById("pages");
+    for (let i = 1; i <= pdf.numPages; i++) {
+      const page = await pdf.getPage(i);
+      const viewport = page.getViewport({ scale: 1.5 });
+      const canvas = document.createElement("canvas");
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+      host.appendChild(canvas);
+      await page.render({ canvasContext: canvas.getContext("2d"), viewport }).promise;
+      const text = await page.getTextContent();
+      console.log("PAGE", i, text.items.map((t) => t.str).join(" "));
+    }
+    document.title = "PDF Preview done " + pdf.numPages;
+  </script>
+</body>
+</html>

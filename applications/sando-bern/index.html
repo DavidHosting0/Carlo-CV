@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ideal-Bewerbungsmappe — Carlo Alexander Koch</title>
+    <title>Bewerbung MediaMarkt Gümligen Carlo Alexander Koch</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,25 +13,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="screen-toolbar no-print">
-      <p id="print-hint">Zum PDF: <kbd>Strg</kbd>+<kbd>P</kbd> → „Als PDF speichern“.</p>
-      <div class="toolbar-actions">
-        <div class="lang-switch" role="group" aria-label="Language">
-          <button type="button" class="lang-btn" data-lang="de" aria-pressed="true">DE</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <button type="button" class="btn-print" onclick="window.print()">
-          <span id="print-btn-label">Drucken / PDF</span>
-        </button>
-      </div>
-    </div>
-
-    <aside class="ideal-banner" id="ideal-banner" role="note">
-      <strong id="meta-label">Ideal-Beispiel / Analyse</strong>
+    <aside class="ideal-banner" id="ideal-banner" role="note" hidden>
+      <strong id="meta-label"></strong>
       <span id="meta-hinweis"></span>
     </aside>
 
-    <!-- ——— LEBENSLAUF ——— -->
+    <div id="pdf-root">
+    <!-- --- LEBENSLAUF --- -->
     <article class="page page-cv" id="lebenslauf">
       <header class="cv-hero">
         <div class="cv-hero__text">
@@ -55,7 +43,7 @@
       </section>
 
       <section class="cv-section" aria-labelledby="heading-erfahrung">
-        <h2 id="heading-erfahrung">Berufserfahrung</h2>
+        <h2 id="heading-erfahrung">Praxiserfahrung</h2>
         <div id="erfahrung-list"></div>
       </section>
 
@@ -82,7 +70,7 @@
       </section>
     </article>
 
-    <!-- ——— MOTIVATIONSSCHREIBEN ——— -->
+    <!-- --- MOTIVATIONSSCHREIBEN --- -->
     <article class="page page-letter" id="motivation">
       <header class="letter-head">
         <div class="letter-sender" id="letter-sender"></div>
@@ -98,7 +86,15 @@
         <p id="motivation-absatz2"></p>
         <p id="motivation-absatz3"></p>
         <p class="letter-close" id="motivation-gruss"></p>
-        <p class="letter-sign" id="motivation-unterschrift"></p>
+        <div class="letter-sign-block" id="motivation-sign-block">
+          <img
+            id="motivation-sign-img"
+            class="letter-sign-img"
+            src="carlosignature.png"
+            alt="Unterschrift"
+          />
+          <p class="letter-sign" id="motivation-unterschrift" hidden></p>
+        </div>
       </div>
 
       <footer class="letter-footer no-print-hint">
@@ -106,7 +102,7 @@
       </footer>
     </article>
 
-    <!-- ——— ZEUGNISSE ——— -->
+    <!-- --- ZEUGNISSE --- -->
     <article class="page page-zeugnisse" id="zeugnisse" hidden>
       <header class="zeugnisse-head">
         <h2 id="heading-zeugnisse">Zeugnisse &amp; Nachweise</h2>
@@ -114,6 +110,7 @@
       </header>
       <div id="zeugnisse-list"></div>
     </article>
+    </div>
 
     <script src="content.js"></script>
     <script src="render.js"></script>

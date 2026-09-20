@@ -1,7 +1,7 @@
-# Bewerbung — Sando Bern (gespeichert)
+# Bewerbung - Sando Bern (gespeichert)
 
 **Stand:** 19.09.2026  
-**Arbeitgeber:** Sando BBZ Sàrl — Sando Bern (Bubenbergplatz)  
+**Arbeitgeber:** Sando BBZ Sàrl - Sando Bern (Bubenbergplatz)  
 **Zielposition:** Chef de Partie (Entwicklung zum Chef de Cuisine)
 
 ## Inhalt

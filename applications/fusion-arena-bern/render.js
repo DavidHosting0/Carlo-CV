@@ -2,7 +2,7 @@
   "use strict";
 
   if (typeof getCvContent !== "function") {
-    console.error("getCvContent fehlt — content.js laden?");
+    console.error("getCvContent fehlt: content.js laden?");
     return;
   }
 
@@ -266,7 +266,7 @@
     text(
       "letter-betreff",
       `${ui.betreffPrefix || "Application"} ${c.zielposition}${
-        c.arbeitgeberZiel ? ` — ${c.arbeitgeberZiel}` : ""
+        c.arbeitgeberZiel ? ` | ${c.arbeitgeberZiel}` : ""
       }`
     );
 
@@ -276,7 +276,31 @@
     text("motivation-absatz2", m.absatz2 || "");
     text("motivation-absatz3", m.absatz3 || "");
     text("motivation-gruss", m.gruss || "");
-    text("motivation-unterschrift", m.unterschrift || c.name);
+
+    const signImg = $("motivation-sign-img");
+    const signText = $("motivation-unterschrift");
+    const signFile = c.unterschriftBild || "carlosignature.png";
+    if (signImg) {
+      signImg.src = signFile;
+      signImg.alt = m.unterschrift || c.name || "Unterschrift";
+      signImg.removeAttribute("hidden");
+      signImg.hidden = false;
+      if (signText) {
+        signText.textContent = "";
+        signText.hidden = true;
+      }
+      signImg.onerror = () => {
+        signImg.hidden = true;
+        if (signText) {
+          signText.hidden = false;
+          signText.textContent = m.unterschrift || c.name || "";
+        }
+      };
+    } else if (signText) {
+      signText.hidden = false;
+      signText.textContent = m.unterschrift || c.name || "";
+    }
+
     text("letter-footnote", c.meta?.hinweis || "");
     const footnote = $("letter-footnote");
     if (footnote) {
@@ -322,8 +346,8 @@
       }
     }
 
-    document.title = `${lang === "en" ? "Application" : "Bewerbung"} — ${c.name}${
-      c.zielposition ? ` · ${c.zielposition}` : ""
+    document.title = `${lang === "en" ? "Application" : "Bewerbung"} | ${c.name}${
+      c.zielposition ? ` | ${c.zielposition}` : ""
     }`;
   }
 
