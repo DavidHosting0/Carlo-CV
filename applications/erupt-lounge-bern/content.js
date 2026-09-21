@@ -109,7 +109,6 @@ const CV_I18N = {
       "Gaming und Technik verständlich erklären",
       "Gerne im Team und bei Events anpacken",
       "Schichtflexibilität an Abenden und Wochenenden",
-      "Deutsch, Englisch, Italienisch",
     ],
     projekte: [
       {
@@ -236,7 +235,6 @@ const CV_I18N = {
       "Explaining gaming and tech clearly",
       "Happy to jump in with the team and at events",
       "Shift flexibility on evenings and weekends",
-      "German, English, Italian",
     ],
     projekte: [
       {
