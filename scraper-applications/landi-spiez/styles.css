@@ -1,0 +1,854 @@
+/* -- Design tokens -- */
+:root {
+  --ink: #1c1a17;
+  --ink-muted: #5c574f;
+  --paper: #ebe6de;
+  --paper-pure: #faf8f4;
+  --line: #ddd6cb;
+  --accent: #6b3f2a;
+  --accent-deep: #4a2a1c;
+  --accent-soft: #f0e6dc;
+  --banner: #3d4a38;
+  --banner-bg: #e8ede6;
+  --photo-bg: #e2ddd4;
+  --rule: #c4b8a8;
+  --radius: 0;
+  --font-display: "Newsreader", "Times New Roman", serif;
+  --font-body: "Figtree", "Segoe UI", sans-serif;
+  --page-width: 210mm;
+  --page-pad: 15mm 17mm;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, rgba(107, 63, 42, 0.06) 0%, transparent 40%),
+    radial-gradient(ellipse 100% 70% at 100% 0%, #dfe8e2 0%, transparent 55%),
+    linear-gradient(160deg, #e8e2d8 0%, #d4d0c8 100%);
+  min-height: 100vh;
+  line-height: 1.48;
+}
+
+/* -- Screen toolbar -- */
+.screen-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  max-width: var(--page-width);
+  margin: 1.25rem auto 0.75rem;
+  padding: 0 1rem;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+}
+
+.toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  background: var(--paper-pure);
+  overflow: hidden;
+}
+
+.lang-btn {
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.45rem 0.7rem;
+  border: none;
+  background: transparent;
+  color: var(--ink-muted);
+  cursor: pointer;
+}
+
+.lang-btn + .lang-btn {
+  border-left: 1px solid var(--line);
+}
+
+.lang-btn.is-active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.lang-btn:hover:not(.is-active) {
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+
+.screen-toolbar kbd {
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper-pure);
+  font-size: 0.8em;
+  font-family: inherit;
+}
+
+.btn-print {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: 3px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
+
+.btn-print:hover:not(:disabled) {
+  background: var(--accent-deep);
+}
+
+.btn-print:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+/* Cleaner look while html2pdf captures the pages */
+body.pdf-exporting .page,
+body.pdf-exporting .page-cv,
+body.pdf-exporting .page-letter,
+body.pdf-exporting .page-zeugnisse {
+  box-shadow: none !important;
+  margin: 0 0 0.5mm !important;
+  background: #ffffff !important;
+  background-image: none !important;
+}
+
+body.pdf-exporting .page-cv::before,
+body.pdf-exporting .page-letter::before,
+body.pdf-exporting .page-zeugnisse::before {
+  display: none !important;
+  content: none !important;
+}
+
+
+/* -- Ideal banner -- */
+.ideal-banner {
+  max-width: var(--page-width);
+  margin: 0 auto 1rem;
+  padding: 0.7rem 1rem;
+  background: var(--banner-bg);
+  border-left: 3px solid var(--banner);
+  color: var(--ink);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ideal-banner strong {
+  color: var(--banner);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ideal-banner[hidden] {
+  display: none !important;
+}
+
+/* -- Pages -- */
+.page {
+  width: var(--page-width);
+  min-height: 297mm;
+  margin: 0 auto 1.5rem;
+  padding: var(--page-pad);
+  background: var(--paper-pure);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 18px 48px rgba(28, 26, 23, 0.1);
+  position: relative;
+}
+
+.page-cv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 38%, transparent 38%);
+}
+
+.page-cv {
+  background:
+    linear-gradient(180deg, var(--accent-soft) 0%, transparent 22%),
+    var(--paper-pure);
+}
+
+/* -- Hero -- */
+.cv-hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.35rem;
+  align-items: start;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 1.35rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.cv-hero h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 2.35rem;
+  line-height: 1.1;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+}
+
+.hero-sub {
+  margin: 0.5rem 0 0.95rem;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.15rem;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+}
+
+.contact-list a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.contact-list a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.cv-hero__photo {
+  width: 33mm;
+  height: 42mm;
+  flex-shrink: 0;
+}
+
+.photo-placeholder,
+.photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.photo-placeholder[hidden],
+.photo-img[hidden] {
+  display: none !important;
+}
+
+.photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--photo-bg);
+  border: 1px solid var(--line);
+  color: var(--ink-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  gap: 0.15rem;
+}
+
+.photo-placeholder small {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.68rem;
+  opacity: 0.85;
+}
+
+/* -- Sections -- */
+.cv-section {
+  margin-bottom: 1.2rem;
+}
+
+.cv-section h2 {
+  margin: 0 0 0.55rem;
+  padding-bottom: 0.28rem;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  letter-spacing: 0.01em;
+  border-bottom: 1px solid var(--rule);
+}
+
+.profil-text {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.93rem;
+  max-width: 64ch;
+  line-height: 1.55;
+}
+
+/* Experience entries */
+.job {
+  margin-bottom: 0.95rem;
+  padding: 0 0 0.85rem 0.85rem;
+  border-bottom: 1px solid var(--line);
+  border-left: 2px solid var(--accent-soft);
+}
+
+.job:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.job-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  align-items: baseline;
+}
+
+.job-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.job-meta {
+  margin: 0.15rem 0 0.4rem;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.job-zeitraum {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.job-bullets {
+  margin: 0;
+  padding-left: 1.05rem;
+  font-size: 0.86rem;
+  color: var(--ink);
+}
+
+.job-bullets li {
+  margin-bottom: 0.22rem;
+}
+
+.job-bullets li::marker {
+  color: var(--accent);
+}
+
+/* Columns */
+.cv-columns {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.sprachen-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sprachen-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.88rem;
+}
+
+.sprachen-list li:last-child {
+  border-bottom: none;
+}
+
+.sprachen-list .niveau {
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.ausbildung-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.ausbildung-meta {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+}
+
+.ausbildung-details {
+  margin: 0;
+  font-size: 0.86rem;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skills-list li {
+  font-size: 0.76rem;
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  color: var(--accent-deep);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+/* Projects */
+.projekt {
+  margin-bottom: 0.7rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--accent);
+}
+
+.projekt:last-child {
+  margin-bottom: 0;
+}
+
+.projekt-titel {
+  margin: 0 0 0.15rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.projekt-text {
+  margin: 0;
+  font-size: 0.86rem;
+  color: var(--ink-muted);
+}
+
+/* -- Motivationsschreiben -- */
+.page-letter {
+  page-break-before: always;
+}
+
+.page-letter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 28%, transparent 28%);
+}
+
+.letter-head {
+  margin-bottom: 2rem;
+}
+
+.letter-sender {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  margin-bottom: 1.75rem;
+}
+
+.letter-sender strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.letter-meta {
+  font-size: 0.9rem;
+}
+
+.letter-betreff {
+  margin-top: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+}
+
+.letter-body {
+  font-size: 0.95rem;
+  line-height: 1.58;
+  max-width: 58ch;
+}
+
+.letter-body p {
+  margin: 0 0 1rem;
+}
+
+.letter-close {
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.letter-sign-block {
+  margin: 0.25rem 0 0.75rem;
+  min-height: 18mm;
+}
+
+.letter-sign-img {
+  display: block;
+  height: 24mm;
+  width: auto;
+  max-width: 90mm;
+  object-fit: contain;
+  object-position: left center;
+  filter: none !important;
+  opacity: 1 !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.letter-sign {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.letter-sign[hidden],
+.letter-sign-img[hidden] {
+  display: none !important;
+}
+
+.ideal-footnote {
+  margin: 2.5rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  line-height: 1.35;
+}
+
+/* -- Zeugnisse -- */
+.page-zeugnisse {
+  page-break-before: always;
+}
+
+.page-zeugnisse::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--accent) 22%, transparent 22%);
+}
+
+.zeugnisse-head h2 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+}
+
+.zeugnisse-intro {
+  margin: 0 0 1.25rem;
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  max-width: 62ch;
+}
+
+.zeugnis {
+  margin: 0 0 1.75rem;
+  padding: 0;
+}
+
+.zeugnis:last-child {
+  margin-bottom: 0;
+}
+
+.zeugnis figcaption {
+  margin: 0 0 0.55rem;
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  line-height: 1.4;
+}
+
+.zeugnis figcaption strong {
+  display: inline-block;
+  color: var(--ink);
+  font-size: 0.95rem;
+  margin-bottom: 0.15rem;
+}
+
+.zeugnis-img {
+  display: block;
+  width: 100%;
+  max-height: 240mm;
+  object-fit: contain;
+  object-position: top center;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+/* -- Responsive (screen only - print must keep desktop layout) -- */
+@media screen and (max-width: 720px) {
+  body {
+    background: var(--paper);
+  }
+
+  .page {
+    width: 100%;
+    min-height: auto;
+    margin: 0 0 1rem;
+    padding: 1.25rem 1rem;
+    box-shadow: none;
+  }
+
+  .cv-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-hero__photo {
+    order: -1;
+    width: 28mm;
+    height: 35mm;
+  }
+
+  .cv-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .cv-hero h1 {
+    font-size: 1.85rem;
+  }
+}
+
+/* -- Print / PDF -- */
+@media print {
+  html {
+    font-size: 12.5px !important;
+  }
+
+  body {
+    background: none !important;
+    margin: 0 !important;
+    color: #000;
+  }
+
+  .no-print,
+  .screen-toolbar,
+  .ideal-banner,
+  .letter-footer,
+  .ideal-footnote {
+    display: none !important;
+  }
+
+  /* Feste Seitentrennung: 1 Lebenslauf | 2 Anschreiben | 3+ Zeugnisse */
+  .page-cv {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .page-letter {
+    page-break-before: always;
+    page-break-after: always;
+    break-before: page;
+    break-after: page;
+  }
+
+  .page-zeugnisse {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .cv-hero {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    align-items: start !important;
+    gap: 0.8rem !important;
+    padding-bottom: 0.7rem !important;
+    margin-bottom: 0.7rem !important;
+  }
+
+  .cv-hero h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .cv-hero__photo {
+    order: 0 !important;
+    width: 28mm !important;
+    height: 36mm !important;
+    justify-self: end;
+  }
+
+  .cv-columns {
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr !important;
+    gap: 1rem !important;
+  }
+
+  .page {
+    width: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    background-image: none !important;
+  }
+
+  .page-cv,
+  .page-letter,
+  .page-zeugnisse {
+    background: #fff !important;
+    background-image: none !important;
+  }
+
+  .page-cv::before,
+  .page-letter::before,
+  .page-zeugnisse::before {
+    display: none !important;
+  }
+
+  .cv-section {
+    margin-bottom: 0.65rem !important;
+  }
+
+  .cv-section h2 {
+    margin-bottom: 0.3rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .profil-text {
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .job {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 0.55rem !important;
+    padding-bottom: 0.45rem !important;
+  }
+
+  .job-bullets {
+    font-size: 0.8rem !important;
+  }
+
+  .job-bullets li {
+    margin-bottom: 0.1rem !important;
+  }
+
+  .skills-list li {
+    font-size: 0.72rem !important;
+    padding: 0.18rem 0.4rem !important;
+  }
+
+  .projekt {
+    margin-bottom: 0.35rem !important;
+  }
+
+  .projekt-text {
+    font-size: 0.78rem !important;
+  }
+
+  .letter-body {
+    max-width: none !important;
+    font-size: 0.92rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .zeugnisse-head {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .zeugnisse-intro {
+    font-size: 0.78rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  /* Zeugnis 1 unter Intro, Zeugnis 2 auf neuer Seite */
+  .zeugnis {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin: 0 0 0.5rem !important;
+  }
+
+  .zeugnis + .zeugnis {
+    break-before: page;
+    page-break-before: always;
+    padding-top: 0;
+  }
+
+  .zeugnis-img {
+    display: block !important;
+    visibility: visible !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 210mm !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: top center !important;
+    border: 1px solid #ccc !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .zeugnis + .zeugnis .zeugnis-img {
+    max-height: 250mm !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 10mm 12mm;
+  }
+}
