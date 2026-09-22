@@ -2,142 +2,174 @@
   {
     "id": "automobile-nemeth-hinterkappelen",
     "firma": "Automobile Nemeth AG",
-    "titel": "Automobil Verkäufer/in (Audi, Maserati & Occasionsfahrzeuge)",
-    "ziel": "Automobil Verkäufer",
+    "titel": "Automobil Verkäufer/in",
     "ort": "Hinterkappelen",
-    "arbeitgeber": "Automobile Nemeth AG, Hinterkappelen",
+    "distanz_km": 3.1,
     "link": "https://www.jobs.ch/de/stellenangebote/detail/89d5729a-0980-47b9-835d-ae1a618de604/",
-    "profil": "auto"
-  },
-  {
-    "id": "volg-kandersteg",
-    "firma": "Volg Detailhandels AG",
-    "titel": "Verkäuferin, Verkäufer",
-    "ziel": "Verkäufer",
-    "ort": "Kandersteg",
-    "arbeitgeber": "Volg Detailhandels AG, Kandersteg",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/937a13a8-e16a-4484-8ae4-1ddaf3be7213/",
-    "profil": "volg"
-  },
-  {
-    "id": "volg-reutigen",
-    "firma": "Volg Detailhandels AG",
-    "titel": "Verkäuferin / Verkäufer",
-    "ziel": "Verkäufer",
-    "ort": "Reutigen",
-    "arbeitgeber": "Volg Detailhandels AG, Reutigen",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/7ee0f3fc-bcd9-4270-924f-1129fbecd97b/",
-    "profil": "volg"
-  },
-  {
-    "id": "landi-konolfingen",
-    "firma": "LANDI Aare Genossenschaft",
-    "titel": "Verkäufer TopShop w/m/d",
-    "ziel": "Verkäufer TopShop",
-    "ort": "Konolfingen",
-    "arbeitgeber": "LANDI Aare Genossenschaft, Konolfingen",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/65ff7dce-45f8-4859-9026-264d9dc5276f/",
-    "profil": "landi_shop"
-  },
-  {
-    "id": "volg-blumenstein",
-    "firma": "Volg Detailhandels AG",
-    "titel": "Verkäuferin, Verkäufer f/h/d",
-    "ziel": "Verkäufer",
-    "ort": "Blumenstein",
-    "arbeitgeber": "Volg Detailhandels AG, Blumenstein",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/bf1f8048-710e-4385-8efc-7ab41fbbadc3/",
-    "profil": "volg"
-  },
-  {
-    "id": "landi-spiez",
-    "firma": "LANDI Genossenschaften",
-    "titel": "Verkäuferin / Verkäufer TopShop 60-80% w/m/d",
-    "ziel": "Verkäufer TopShop 60-80%",
-    "ort": "Spiez",
-    "arbeitgeber": "LANDI Genossenschaften, Spiez",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/164c839d-b365-408c-a857-666485cd11cb/",
-    "profil": "landi_shop"
-  },
-  {
-    "id": "landi-laupen",
-    "firma": "LANDI Genossenschaften",
-    "titel": "Verkäuferin / Verkäufer Festservice & Getränke w/m/d",
-    "ziel": "Verkäufer Festservice & Getränke",
-    "ort": "Laupen",
-    "arbeitgeber": "LANDI Genossenschaften, Laupen",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/f5c27fe9-6237-4951-be7c-42510a0c9de1/",
-    "profil": "landi_fest"
-  },
-  {
-    "id": "meier-tobler-bern-solothurn",
-    "firma": "Meier Tobler AG",
-    "titel": "Verkäufer Heizung / Sanitär (w/m)",
-    "ziel": "Verkäufer Heizung / Sanitär",
-    "ort": "Region Bern/Solothurn",
-    "arbeitgeber": "Meier Tobler AG, Region Bern/Solothurn",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/f4d2a7df-c529-4828-8af6-251282d2d152/",
-    "profil": "technik_verkauf"
-  },
-  {
-    "id": "salt-bern",
-    "firma": "Salt Mobile SA",
-    "titel": "Salt Store Verkäufer-/Verkäuferin Bern 100%",
-    "ziel": "Salt Store Verkäufer 100%",
-    "ort": "Bern",
-    "arbeitgeber": "Salt Mobile SA, Salt Store Bern",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/40598104-ff32-4510-8693-85655df32d9b/",
-    "profil": "salt"
-  },
-  {
-    "id": "rotho-blaas-bern",
-    "firma": "Rotho Blaas Schweiz GmbH",
-    "titel": "Technischer Verkäufer im Außendienst - Berner Oberland",
-    "ziel": "Technischer Verkäufer Außendienst",
-    "ort": "Bern / Berner Oberland",
-    "arbeitgeber": "Rotho Blaas Schweiz GmbH, Bern / Berner Oberland",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/b85faeae-3adc-4815-85c5-c5a35406287f/",
-    "profil": "aussendienst"
+    "pfad": "./automobile-nemeth-hinterkappelen/",
+    "radius_ok": true
   },
   {
     "id": "magic-x-bern",
     "firma": "Magic X Retail AG",
-    "titel": "Verkäufer/in 20-60% (m/w/d) für Bern im Stundenlohn",
-    "ziel": "Verkäufer 20-60% (Stundenlohn)",
+    "titel": "Verkäufer/in 20-60% Bern",
     "ort": "Bern",
-    "arbeitgeber": "Magic X Retail AG, Bern",
+    "distanz_km": 4.9,
     "link": "https://www.jobs.ch/de/stellenangebote/detail/cd6dfd5d-5314-4405-b7ca-fe74eb18969e/",
-    "profil": "magicx"
+    "pfad": "./magic-x-bern/",
+    "radius_ok": true
   },
   {
-    "id": "salt-bienne",
+    "id": "salt-bern",
     "firma": "Salt Mobile SA",
-    "titel": "Salt Store Verkäufer/in Bienne/Biel 80%-100%",
-    "ziel": "Salt Store Verkäufer 80-100%",
-    "ort": "Biel/Bienne",
-    "arbeitgeber": "Salt Mobile SA, Salt Store Biel/Bienne",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/05e7794b-a12a-4bd8-9490-826e7ac5fada/",
-    "profil": "salt",
-    "note": "Zwei identische Ausschreibungen auf jobs.ch zusammengeführt"
+    "titel": "Salt Store Verkäufer Bern 100%",
+    "ort": "Bern",
+    "distanz_km": 4.9,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/40598104-ff32-4510-8693-85655df32d9b/",
+    "pfad": "./salt-bern/",
+    "radius_ok": true
   },
   {
-    "id": "magic-x-lyssach",
-    "firma": "Magic X Retail AG",
-    "titel": "Verkäufer/in 30-40% (m/w/d) für Lyssach im Stundenlohn",
-    "ziel": "Verkäufer 30-40% (Stundenlohn)",
-    "ort": "Lyssach",
-    "arbeitgeber": "Magic X Retail AG, Lyssach",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/9c92ca33-fa16-45f0-8ff0-08942bfff6cb/",
-    "profil": "magicx"
-  },
-  {
-    "id": "meier-tobler-thun",
+    "id": "meier-tobler-bern-solothurn",
     "firma": "Meier Tobler AG",
-    "titel": "Leiter Marché | Verkäufer Heizung / Sanitär (w/m)",
-    "ziel": "Verkäufer Heizung / Sanitär (Marché Thun)",
-    "ort": "Thun",
-    "arbeitgeber": "Meier Tobler AG, Thun",
-    "link": "https://www.jobs.ch/de/stellenangebote/detail/7e4ad1c5-e0d9-44c6-bb0a-2d497dc8b519/",
-    "profil": "leiter_marche"
+    "titel": "Verkäufer Heizung / Sanitär",
+    "ort": "Region Bern/Solothurn",
+    "distanz_km": 4.9,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/f4d2a7df-c529-4828-8af6-251282d2d152/",
+    "notiz": "technisch, eher Fachverkauf",
+    "pfad": "./meier-tobler-bern-solothurn/",
+    "radius_ok": true
+  },
+  {
+    "id": "rotho-blaas-bern",
+    "firma": "Rotho Blaas Schweiz GmbH",
+    "titel": "Technischer Verkäufer Aussendienst",
+    "ort": "Bern / Berner Oberland",
+    "distanz_km": 4.9,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/b85faeae-3adc-4815-85c5-c5a35406287f/",
+    "notiz": "Aussendienst Berner Oberland, oft >10km Touren",
+    "pfad": "./rotho-blaas-bern/",
+    "radius_ok": true
+  },
+  {
+    "id": "denner-bern-buempliz",
+    "firma": "Denner AG",
+    "titel": "Verkäufer*in 60-80%",
+    "ort": "Bern-Bümpliz, Bottigenstrasse 7-9",
+    "distanz_km": 1.0,
+    "link": "https://jobs.migros.ch/de/unsere-unternehmen/job/denner-ag/verkauferin/5daa7a81-0258-4bf8-ba3d-e3942e381992",
+    "pfad": "../applications/denner-bern-buempliz/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "lidl-bern-schlossstrasse",
+    "firma": "Lidl Schweiz AG",
+    "titel": "Verkäufer / Verkäuferin (m/w/d) 20-60%",
+    "ort": "Bern, Schlossstrasse 115b",
+    "distanz_km": 2.0,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/51402f0b-82b5-4f80-9b90-59b08df91a98/",
+    "pfad": "../applications/lidl-bern-schlossstrasse/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "kkiosk-bern-muehledorf",
+    "firma": "k kiosk (Valora)",
+    "titel": "Verkäuferin / Verkäufer k kiosk 10 Std.",
+    "ort": "Bern 3018, Mühledorfstrasse",
+    "distanz_km": 1.8,
+    "link": "https://career.valora.com/fr/job/6219/verkauferin-verkaufer-k-kiosk-10-std",
+    "pfad": "../applications/kkiosk-bern-muehledorf/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "galaxus-bern",
+    "firma": "Digitec Galaxus AG",
+    "titel": "Retail Sales & Service Professional 20-40%",
+    "ort": "Bern, Laupenstrasse 18",
+    "distanz_km": 3.5,
+    "link": "https://jobs.migros.ch/de/unsere-unternehmen/job/galaxus/retail-sales-service-professional-wmd/8f09ae67-240c-4129-8bfe-59e02f5b0f05",
+    "pfad": "../applications/galaxus-bern/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "loeb-bern-lebensmittel",
+    "firma": "LOEB AG",
+    "titel": "Aushilfe Verkauf/Kasse Lebensmittel ca. 40-60%",
+    "ort": "Bern",
+    "distanz_km": 4.9,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/8f520e58-ba3f-43ec-b759-c55516d53e81/",
+    "pfad": "../applications/loeb-bern-lebensmittel/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "mobilezone-koeniz",
+    "firma": "mobilezone ag",
+    "titel": "Verkaufsberater/in 100% Shop Köniz",
+    "ort": "Köniz, Bläuacker 10",
+    "distanz_km": 3.5,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/9b5ff1f5-2c2f-480c-9836-b7f844fdac21/",
+    "pfad": "../applications/mobilezone-koeniz/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "luce-tower-ostermundigen",
+    "firma": "Luce Tower Ristorante",
+    "titel": "Servicemitarbeiter/in 100%",
+    "ort": "Ostermundigen",
+    "distanz_km": 8.3,
+    "link": "https://jobborse.ch/servicemitarbeiter_ostermundigen-c118480/2026-09-luce-tower-ristorante_i4208051630",
+    "pfad": "../applications/luce-tower-ostermundigen/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "coop-bern-kasparstrasse",
+    "firma": "Coop",
+    "titel": "Verkäufer:in Food (Kiosk) 80-100%",
+    "ort": "Bern, Kasparstrasse 7+9",
+    "distanz_km": 5.5,
+    "link": "https://www.jobs.ch/en/vacancies/detail/627f5a80-9d26-4be7-b61e-a08178fd761c/",
+    "pfad": "../applications/coop-bern-kasparstrasse/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "hm-bern-sales",
+    "firma": "H&M Hennes & Mauritz AG",
+    "titel": "Sales Advisor 60% (24 Wochenstunden)",
+    "ort": "Bern",
+    "distanz_km": 4.9,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/90a3d155-79e7-4b28-80f0-cd0691687570/",
+    "pfad": "../applications/hm-bern-sales/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "sv-bern-gastronomie-aushilfe",
+    "firma": "SV (Schweiz) AG",
+    "titel": "Gastronomie Allrounder Aushilfe Stundenlohn",
+    "ort": "Bern",
+    "distanz_km": 4.9,
+    "link": "https://www.jobs.ch/de/stellenangebote/detail/2e2607d4-0c31-4505-a3dd-68f472bf5e58/",
+    "pfad": "../applications/sv-bern-gastronomie-aushilfe/",
+    "radius_ok": true,
+    "neu": true
+  },
+  {
+    "id": "kkiosk-bern-hirschengraben",
+    "firma": "k kiosk (Valora)",
+    "titel": "Verkäuferin / Verkäufer k kiosk 32 Std.",
+    "ort": "Bern, Hirschengraben 24",
+    "distanz_km": 5.0,
+    "link": "https://career.valora.com/de/job/6334/verkauferin-verkaufer-k-kiosk-32-std",
+    "pfad": "../applications/kkiosk-bern-hirschengraben/",
+    "radius_ok": true,
+    "neu": true
   }
 ]
