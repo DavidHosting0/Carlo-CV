@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "datum": "2026-09-22",
+    "standort_referenz": "Oberbottigen / Bottigenstrasse 300, Bern",
+    "count": 20,
+    "notiz": "20 weitere Bewerbungen: 11 aus vorheriger 10km-Suche + 9 neu"
+  },
+  "jobs": [
+    {
+      "id": "denner-bern-buempliz",
+      "titel": "Verkäufer*in 60-80%",
+      "firma": "Denner AG",
+      "ort": "Bern-Bümpliz Bottigenstrasse",
+      "distanz_km": 1.0,
+      "link": "https://jobs.migros.ch/de/unsere-unternehmen/job/denner-ag/verkauferin/5daa7a81-0258-4bf8-ba3d-e3942e381992",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/denner-bern-buempliz/"
+    },
+    {
+      "id": "lidl-bern-schlossstrasse",
+      "titel": "Verkäufer 20-60%",
+      "firma": "Lidl Schweiz AG",
+      "ort": "Bern Schlossstrasse 115b",
+      "distanz_km": 2.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/51402f0b-82b5-4f80-9b90-59b08df91a98/",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/lidl-bern-schlossstrasse/"
+    },
+    {
+      "id": "kkiosk-bern-muehledorf",
+      "titel": "Verkäufer 10 Std.",
+      "firma": "k kiosk Valora",
+      "ort": "Bern Mühledorfstrasse",
+      "distanz_km": 1.8,
+      "link": "https://career.valora.com/fr/job/6219/verkauferin-verkaufer-k-kiosk-10-std",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/kkiosk-bern-muehledorf/"
+    },
+    {
+      "id": "galaxus-bern",
+      "titel": "Retail Sales 20-40%",
+      "firma": "Digitec Galaxus AG",
+      "ort": "Bern Laupenstrasse 18",
+      "distanz_km": 3.5,
+      "link": "https://jobs.migros.ch/de/unsere-unternehmen/job/galaxus/retail-sales-service-professional-wmd/8f09ae67-240c-4129-8bfe-59e02f5b0f05",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/galaxus-bern/"
+    },
+    {
+      "id": "loeb-bern-lebensmittel",
+      "titel": "Aushilfe Verkauf/Kasse Lebensmittel 40-60%",
+      "firma": "LOEB AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/8f520e58-ba3f-43ec-b759-c55516d53e81/",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/loeb-bern-lebensmittel/"
+    },
+    {
+      "id": "mobilezone-koeniz",
+      "titel": "Verkaufsberater/in 100%",
+      "firma": "mobilezone ag",
+      "ort": "Köniz",
+      "distanz_km": 3.5,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/9b5ff1f5-2c2f-480c-9836-b7f844fdac21/",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/mobilezone-koeniz/"
+    },
+    {
+      "id": "luce-tower-ostermundigen",
+      "titel": "Servicemitarbeiter/in",
+      "firma": "Luce Tower Ristorante",
+      "ort": "Ostermundigen",
+      "distanz_km": 8.3,
+      "link": "",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/luce-tower-ostermundigen/"
+    },
+    {
+      "id": "coop-bern-kasparstrasse",
+      "titel": "Verkäufer:in Food (Kiosk) 80-100%",
+      "firma": "Coop",
+      "ort": "Bern Kasparstrasse",
+      "distanz_km": 5.5,
+      "link": "",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/coop-bern-kasparstrasse/"
+    },
+    {
+      "id": "hm-bern-sales",
+      "titel": "Sales Advisor 60%",
+      "firma": "H&M",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/90a3d155-79e7-4b28-80f0-cd0691687570/",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/hm-bern-sales/"
+    },
+    {
+      "id": "sv-bern-gastronomie-aushilfe",
+      "titel": "Gastronomie Allrounder Aushilfe",
+      "firma": "SV (Schweiz) AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/sv-bern-gastronomie-aushilfe/"
+    },
+    {
+      "id": "kkiosk-bern-hirschengraben",
+      "titel": "Verkäufer 32 Std.",
+      "firma": "k kiosk Valora",
+      "ort": "Bern Hirschengraben 24",
+      "distanz_km": 5.0,
+      "link": "https://career.valora.com/de/job/6334/verkauferin-verkaufer-k-kiosk-32-std",
+      "quelle": "PR7 uebernommen",
+      "bewerbung": "applications/kkiosk-bern-hirschengraben/"
+    },
+    {
+      "id": "avec-bern-holligen",
+      "titel": "Verkäuferin / Verkäufer avec 8.6 Std.",
+      "firma": "Valora Schweiz AG (avec)",
+      "ort": "Bern Holligen",
+      "distanz_km": 2.5,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/e2629025-b20a-464f-8961-75887d7cea2e/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/avec-bern-holligen/"
+    },
+    {
+      "id": "interdiscount-bern-wankdorf",
+      "titel": "Weihnachtsaushilfe Verkauf 20-50%",
+      "firma": "Interdiscount",
+      "ort": "Bern Wankdorf",
+      "distanz_km": 6.5,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/de69565d-94c7-4fdf-89d6-98c25e923554/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/interdiscount-bern-wankdorf/"
+    },
+    {
+      "id": "sunrise-bern-waisenhausplatz",
+      "titel": "Sales Agent 60-100%",
+      "firma": "Sunrise GmbH",
+      "ort": "Bern, Waisenhausplatz",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/6214d845-a81f-4b51-b079-0a1ac0d1cf1e/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/sunrise-bern-waisenhausplatz/"
+    },
+    {
+      "id": "bayard-bern-marktgasse",
+      "titel": "Modeberater:in 60% (BAYARD CO LTD WOMEN)",
+      "firma": "Mode Bayard AG",
+      "ort": "Bern, Marktgasse 45",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/0f45dcac-f5d3-4b24-a992-0b9fde47ca3d/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/bayard-bern-marktgasse/"
+    },
+    {
+      "id": "ottos-bern-parfuem",
+      "titel": "Aushilfe Verkäufer:in Parfüm/Kosmetik 60-80%",
+      "firma": "OTTO'S AG",
+      "ort": "Bern (3011)",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/ddc455c6-fdad-447d-a15f-0116b9bd618e/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/ottos-bern-parfuem/"
+    },
+    {
+      "id": "hm-bern-30",
+      "titel": "Sales Advisor (m/w/d) 30% (12 Wochenstunden)",
+      "firma": "H&M Hennes & Mauritz AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/340a6c37-f69a-4f8a-be25-1a3ed2e36439/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/hm-bern-30/"
+    },
+    {
+      "id": "mcdonalds-bern-crew",
+      "titel": "Crew 100%",
+      "firma": "McDonald's Suisse Restaurants Sàrl",
+      "ort": "Bern",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/c937c26f-4c14-4b4a-b6d9-f055ee919738/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/mcdonalds-bern-crew/"
+    },
+    {
+      "id": "mcdonalds-bern-host",
+      "titel": "Host / Hostess 100%",
+      "firma": "McDonald's Suisse Restaurants Sàrl",
+      "ort": "Bern",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/d88d324d-2dc5-41e3-94f7-abaf69683c17/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/mcdonalds-bern-host/"
+    },
+    {
+      "id": "starbucks-bern-barista",
+      "titel": "Barista im Stundenlohn 40-60%",
+      "firma": "Starbucks Coffee Switzerland GmbH",
+      "ort": "Bern",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/2b0d8ff9-786b-41c2-8486-e050dcf5e318/",
+      "quelle": "neue Suche",
+      "bewerbung": "applications/starbucks-bern-barista/"
+    }
+  ]
+}

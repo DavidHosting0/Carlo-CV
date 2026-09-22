@@ -35,3 +35,12 @@ Zusätzliche Stellen finden, die in der ersten 10 km Suche noch **keine** Bewerb
 ## Dateien
 - `jobs-neu.json` – neue Treffer mit Bewerbung
 - `jobs-ausgeschlossen.json` – geprüfte, aber nicht passende Stellen
+
+
+## Batch +20 (22.09.2026)
+
+20 weitere Bewerbungsmappen:
+- 11 aus der vorherigen Oberbottigen-Suche (PR #7), die auf diesem Branch noch fehlten
+- 9 neu gefunden: avec Holligen, Interdiscount Wankdorf, Sunrise Waisenhausplatz, Bayard Marktgasse, OTTO'S Parfüm, H&M 30%, McDonald's Crew, McDonald's Host, Starbucks Barista
+
+Details: `jobs-batch-20.json`
