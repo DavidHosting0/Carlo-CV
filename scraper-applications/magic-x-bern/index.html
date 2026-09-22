@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bewerbung Magic X Retail AG Carlo Alexander Koch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="ideal-banner" id="ideal-banner" role="note" hidden>
+      <strong id="meta-label"></strong>
+      <span id="meta-hinweis"></span>
+    </aside>
+
+    <div id="pdf-root">
+    <!-- --- LEBENSLAUF --- -->
+    <article class="page page-cv" id="lebenslauf">
+      <header class="cv-hero">
+        <div class="cv-hero__text">
+          <p class="eyebrow" id="zielposition"></p>
+          <h1 id="name"></h1>
+          <p class="hero-sub" id="hero-meta"></p>
+          <ul class="contact-list" id="contact-list"></ul>
+        </div>
+        <div class="cv-hero__photo" id="photo-slot">
+          <div class="photo-placeholder" id="photo-placeholder">
+            <span>Foto</span>
+            <small>einfügen</small>
+          </div>
+          <img id="photo-img" class="photo-img" alt="Bewerbungsfoto" hidden />
+        </div>
+      </header>
+
+      <section class="cv-section" aria-labelledby="heading-profil">
+        <h2 id="heading-profil">Profil</h2>
+        <p class="profil-text" id="kurzprofil"></p>
+      </section>
+
+      <section class="cv-section" aria-labelledby="heading-erfahrung">
+        <h2 id="heading-erfahrung">Praxiserfahrung</h2>
+        <div id="erfahrung-list"></div>
+      </section>
+
+      <div class="cv-columns">
+        <section class="cv-section" aria-labelledby="heading-ausbildung">
+          <h2 id="heading-ausbildung">Ausbildung</h2>
+          <div id="ausbildung-block"></div>
+        </section>
+
+        <section class="cv-section" aria-labelledby="heading-sprachen">
+          <h2 id="heading-sprachen">Sprachen</h2>
+          <ul class="sprachen-list" id="sprachen-list"></ul>
+        </section>
+      </div>
+
+      <section class="cv-section" aria-labelledby="heading-skills">
+        <h2 id="heading-skills">Qualifikationen</h2>
+        <ul class="skills-list" id="skills-list"></ul>
+      </section>
+
+      <section class="cv-section" aria-labelledby="heading-projekte" id="projekte-section">
+        <h2 id="heading-projekte">Projekte &amp; Nebenleistungen</h2>
+        <div id="projekte-list"></div>
+      </section>
+    </article>
+
+    <!-- --- MOTIVATIONSSCHREIBEN --- -->
+    <article class="page page-letter" id="motivation">
+      <header class="letter-head">
+        <div class="letter-sender" id="letter-sender"></div>
+        <div class="letter-meta">
+          <p id="letter-ort-datum"></p>
+          <p class="letter-betreff" id="letter-betreff"></p>
+        </div>
+      </header>
+
+      <div class="letter-body">
+        <p id="motivation-anrede"></p>
+        <p id="motivation-absatz1"></p>
+        <p id="motivation-absatz2"></p>
+        <p id="motivation-absatz3"></p>
+        <p class="letter-close" id="motivation-gruss"></p>
+        <div class="letter-sign-block" id="motivation-sign-block">
+          <img
+            id="motivation-sign-img"
+            class="letter-sign-img"
+            src="carlosignature.png"
+            alt="Unterschrift"
+          />
+          <p class="letter-sign" id="motivation-unterschrift" hidden></p>
+        </div>
+      </div>
+
+      <footer class="letter-footer no-print-hint">
+        <p class="ideal-footnote" id="letter-footnote"></p>
+      </footer>
+    </article>
+
+    <!-- --- ZEUGNISSE --- -->
+    <article class="page page-zeugnisse" id="zeugnisse" hidden>
+      <header class="zeugnisse-head">
+        <h2 id="heading-zeugnisse">Zeugnisse &amp; Nachweise</h2>
+        <p class="zeugnisse-intro" id="zeugnisse-intro"></p>
+      </header>
+      <div id="zeugnisse-list"></div>
+    </article>
+    </div>
+
+    <script src="content.js"></script>
+    <script src="render.js"></script>
+  </body>
+</html>
