@@ -1,0 +1,33 @@
+{
+  "count": 4,
+  "jobs": [
+    {
+      "titel": "Verkäufer:in Würth Shop",
+      "firma": "Würth AG",
+      "ort": "Niederwangen",
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/5b2ce110-6107-4714-aafc-3cf6292f146f/",
+      "grund": "EFZ Detailhandel Eisenwaren verlangt"
+    },
+    {
+      "titel": "Kundendienstmitarbeiter:in Service",
+      "firma": "Fust",
+      "ort": "Niederwangen",
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/b52fa5b1-2f4d-40c1-9d37-1cba7a47fe01/",
+      "grund": "Französisch B2 und kaufmännischer Kundendienst"
+    },
+    {
+      "titel": "ServicemitarbeiterIn",
+      "firma": "Bindella / Kornhauskeller",
+      "ort": "Bern",
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/e2df00ac-09b2-4a1c-ad2c-b79e7feaa669/",
+      "grund": "Service Lehre und Weinkenntnisse"
+    },
+    {
+      "titel": "Detailhandelslehre EFZ/EBA",
+      "firma": "BAUHAUS",
+      "ort": "Niederwangen",
+      "link": "jobijoba / BAUHAUS",
+      "grund": "Lehrstelle erst ab August 2027"
+    }
+  ]
+}
