@@ -1,0 +1,12 @@
+# Lokale Umgebungsvariablen (Secrets / persönliche Sucheinstellungen)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Playwright
+playwright-report/
+test-results/
