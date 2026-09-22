@@ -1,9 +1,9 @@
-# Bewerbung - ERUPT Lounge Bern (Initiativ)
+# Bewerbung - ERUPT Lounge Bern (Initiativ, Vollzeit)
 
-**Stand:** 21.09.2026  
+**Stand:** 22.09.2026  
 **Arbeitgeber:** ERUPT AG - Parkterrasse 14, 3012 Bern  
-**Art:** Initiativbewerbung (keine offene Festanstellung; ERUPT freut sich explizit über Initiativbewerbungen)  
-**Zielrolle:** Mitarbeit im Team (Lounge Host / Gästebetreuung)
+**Art:** Initiativbewerbung auf **Vollzeit** (keine offene Festanstellung; ERUPT freut sich explizit über Initiativbewerbungen)  
+**Zielrolle:** Vollzeit Lounge Host / Gästebetreuung
 
 ## Öffnen
 `index.html` im Browser → DE/EN → Drucken / PDF.

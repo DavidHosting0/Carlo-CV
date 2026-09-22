@@ -1,6 +1,6 @@
 /**
  * Ideal-Bewerbungsmappe - DE + EN
- * ERUPT AG / Lounge Bern - Initiativbewerbung (Lounge Host / Team)
+ * ERUPT AG / Lounge Bern - Initiativbewerbung Vollzeit (Lounge Host / Team)
  */
 const CV_SHARED = {
   name: "Carlo Alexander Koch",
@@ -36,14 +36,14 @@ const CV_I18N = {
       langDe: "Deutsch",
       langEn: "English",
     },
-    zielposition: "Mitarbeit im Team (Lounge Host / Gästebetreuung)",
+    zielposition: "Vollzeit Lounge Host / Gästebetreuung",
     nationalitaet: "deutsch",
     meta: {
       kennzeichnung: "",
       hinweis: "",
     },
     kurzprofil:
-      "Ich bin Carlo Koch, 19, jung, lernbereit und motiviert. Nach meinem Schulabschluss habe ich mehrere Monate bei EVA Köln West gearbeitet. Dort habe ich Gäste begrüsst, Headsets eingestellt und Sessions begleitet. Davor hatte ich Minijobs in der Gastronomie bei Burgerwerk und Restaurant Am Fels, wo ich Stosszeiten, Gästekontakt und das Anpacken im kleinen Team gelernt habe. Bei Burgerwerk habe ich ausserdem ein digitales System programmiert, eingeführt und Kollegen geschult. Privat bin ich stark im Gaming unterwegs. Ich wohne in Bern an der Bottigenstrasse 300 und würde mich freuen, Gäste in der ERUPT Lounge zu begrüssen und Events mitzutragen.",
+      "Ich bin Carlo Koch, 19, jung, lernbereit und motiviert und suche eine Vollzeitstelle. Nach meinem Schulabschluss habe ich mehrere Monate bei EVA Köln West gearbeitet. Dort habe ich Gäste begrüsst, Headsets eingestellt und Sessions begleitet. Davor hatte ich Minijobs in der Gastronomie bei Burgerwerk und Restaurant Am Fels, wo ich Stosszeiten, Gästekontakt und das Anpacken im kleinen Team gelernt habe. Bei Burgerwerk habe ich ausserdem ein digitales System programmiert, eingeführt und Kollegen geschult. Privat bin ich stark im Gaming unterwegs. Ich wohne in Bern an der Bottigenstrasse 300 und würde mich freuen, Gäste in der ERUPT Lounge in Vollzeit zu begrüssen und Events mitzutragen.",
     ausbildung: {
       abschluss: "Schulabschluss",
       institution: "Gesamtschule Marienheide",
@@ -108,7 +108,7 @@ const CV_I18N = {
       "Stosszeiten und Gruppen unter Druck",
       "Gaming und Technik verständlich erklären",
       "Gerne im Team und bei Events anpacken",
-      "Schichtflexibilität an Abenden und Wochenenden",
+      "Vollzeit verfügbar, auch Abende und Wochenenden",
     ],
     projekte: [
       {
@@ -130,11 +130,11 @@ const CV_I18N = {
     motivation: {
       anrede: "Sehr geehrtes Team von ERUPT",
       absatz1:
-        "hiermit bewerbe ich mich initiativ um eine Mitarbeit in eurem Team in der Lounge Bern, gerne als Lounge Host oder in der Gästebetreuung oder in einer vergleichbaren Rolle rund um Empfang, Erklärung, Betreuung und Events. Ich bin 19 und weiß, dass ich noch jung bin, aber genau deshalb bin ich desto lernbereiter und motivierter, mich schnell einzuarbeiten und Verantwortung zu übernehmen. Ich wohne in Bern an der Bottigenstrasse 300. Obwohl aktuell keine feste Stelle ausgeschrieben ist, möchte ich mich vorstellen, falls ihr Verstärkung braucht, auch für LAN Parties, HeroFest oder den laufenden Lounge Betrieb.",
+        "hiermit bewerbe ich mich initiativ um eine Vollzeitstelle in eurem Team in der Lounge Bern, gerne als Lounge Host oder in der Gästebetreuung oder in einer vergleichbaren Rolle rund um Empfang, Erklärung, Betreuung und Events. Ich bin 19 und weiß, dass ich noch jung bin, aber genau deshalb bin ich desto lernbereiter und motivierter, mich schnell einzuarbeiten und Verantwortung zu übernehmen. Ich wohne in Bern an der Bottigenstrasse 300. Obwohl aktuell keine feste Stelle ausgeschrieben ist, möchte ich mich vorstellen, falls ihr Verstärkung in Vollzeit braucht, auch für den laufenden Lounge Betrieb sowie LAN Parties und HeroFest.",
       absatz2:
         "ERUPT verbindet genau das, was mir Spass macht: Gaming, Community und Menschen begrüssen. Nach der Schule habe ich mehrere Monate bei EVA Köln West gearbeitet und Gäste durch Sessions begleitet, mit kurzer Erklärung und Hilfe, wenn etwas hakt. Davor habe ich in der Gastronomie bei Burgerwerk und Am Fels Stosszeiten und Teamfit gelernt, und bei Burgerwerk ein digitales System eingeführt und geschult. In eurem Team will ich anpacken, eure Abläufe lernen und dafür sorgen, dass Gäste bei euch eine richtig gute Zeit haben, ob am PC, an der Konsole oder bei Events.",
       absatz3:
-        "Deutsch ist meine Muttersprache und Englisch spreche ich auf B2 Niveau, was für internationale Gäste hilfreich ist. Ich bin flexibel bei Abenden und Wochenenden und könnte ausserdem schon heute anfangen. Über ein Gespräch würde ich mich sehr freuen, gerne auch verbunden mit einem Probearbeitstag vor Ort an der Parkterrasse.",
+        "Deutsch ist meine Muttersprache und Englisch spreche ich auf B2 Niveau, was für internationale Gäste hilfreich ist. Ich bin für Vollzeit verfügbar, flexibel bei Abenden und Wochenenden und könnte ausserdem schon heute anfangen. Über ein Gespräch würde ich mich sehr freuen, gerne auch verbunden mit einem Probearbeitstag vor Ort an der Parkterrasse.",
       gruss: "Freundliche Grüsse",
       unterschrift: "Carlo Alexander Koch",
     },
@@ -162,14 +162,14 @@ const CV_I18N = {
       langDe: "Deutsch",
       langEn: "English",
     },
-    zielposition: "Team role (Lounge Host / Guest Care)",
+    zielposition: "Full-time Lounge Host / Guest Care",
     nationalitaet: "German",
     meta: {
       kennzeichnung: "",
       hinweis: "",
     },
     kurzprofil:
-      "I am Carlo Koch, 19, young, eager to learn and motivated. After finishing school I worked for several months at EVA Köln West. There I welcomed guests, fitted headsets and ran sessions. Before that I had mini jobs in hospitality at Burgerwerk and Restaurant Am Fels, where I learned peak times, guest contact and jumping in as part of a small team. At Burgerwerk I also programmed a digital system, rolled it out and trained colleagues. Privately I am really into gaming. I live in Bern at Bottigenstrasse 300 and would love to welcome guests at the ERUPT Lounge and support events.",
+      "I am Carlo Koch, 19, young, eager to learn and motivated, and I am looking for a full-time role. After finishing school I worked for several months at EVA Köln West. There I welcomed guests, fitted headsets and ran sessions. Before that I had mini jobs in hospitality at Burgerwerk and Restaurant Am Fels, where I learned peak times, guest contact and jumping in as part of a small team. At Burgerwerk I also programmed a digital system, rolled it out and trained colleagues. Privately I am really into gaming. I live in Bern at Bottigenstrasse 300 and would love to welcome guests at the ERUPT Lounge full time and support events.",
     ausbildung: {
       abschluss: "School leaving certificate",
       institution: "Gesamtschule Marienheide",
@@ -234,7 +234,7 @@ const CV_I18N = {
       "Peak times and groups under pressure",
       "Explaining gaming and tech clearly",
       "Happy to jump in with the team and at events",
-      "Shift flexibility on evenings and weekends",
+      "Available full time, including evenings and weekends",
     ],
     projekte: [
       {
@@ -256,11 +256,11 @@ const CV_I18N = {
     motivation: {
       anrede: "Dear ERUPT team",
       absatz1:
-        "I am writing with an unsolicited application to join your team at the Lounge Bern, ideally as lounge host or in guest care or a similar role around reception, explaining, guest care and events. I am 19 and I know I am still young, but that is exactly why I am all the more eager to learn and motivated to get up to speed quickly and take on responsibility. I live in Bern at Bottigenstrasse 300. Even though you have no fixed roles listed right now, I would like to introduce myself in case you need support, including for LAN parties, HeroFest or day to day lounge operations.",
+        "I am writing with an unsolicited application for a full-time role in your team at the Lounge Bern, ideally as lounge host or in guest care or a similar role around reception, explaining, guest care and events. I am 19 and I know I am still young, but that is exactly why I am all the more eager to learn and motivated to get up to speed quickly and take on responsibility. I live in Bern at Bottigenstrasse 300. Even though you have no fixed roles listed right now, I would like to introduce myself in case you need full-time support, including day to day lounge operations as well as LAN parties and HeroFest.",
       absatz2:
         "ERUPT combines what I enjoy: gaming, community and welcoming people. After school I worked for several months at EVA Köln West and guided guests through sessions with a short intro and help when something glitches. Before that I learned peak times and team fit in hospitality at Burgerwerk and Am Fels, and at Burgerwerk I rolled out and trained a digital system. In your team I want to jump in, learn your flow and make sure guests have a really good time, whether at a PC, on console or at events.",
       absatz3:
-        "German is my native language and English is B2, which helps with international guests. I am flexible on evenings and weekends and could also start as early as today. I would be very happy to have a conversation, ideally together with a trial day on site at Parkterrasse.",
+        "German is my native language and English is B2, which helps with international guests. I am available full time, flexible on evenings and weekends, and could also start as early as today. I would be very happy to have a conversation, ideally together with a trial day on site at Parkterrasse.",
       gruss: "Kind regards / Freundliche Grüsse",
       unterschrift: "Carlo Alexander Koch",
     },
