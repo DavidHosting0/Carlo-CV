@@ -34,3 +34,9 @@ Für alle künftigen Bewerbungen in diesem Ordner:
 - Eigener Ordner unter `applications/<firma-ort>/`
 - Motivationsschreiben, Profil und Qualifikationen je Stelle neu schärfen
 - Praxiserfahrung ehrlich halten, Formulierung an die Rolle anpassen
+
+## GitHub (Pflicht für jede Bewerbung)
+- Jede neue Bewerbung landet **nur** unter `applications/<firma-ort>/` (nicht lose im Repo-Root)
+- Ordner enthält mindestens: `index.html`, `content.js`, `render.js`, `styles.css`, `README.md`, Foto, Unterschrift, Zeugnisse
+- Nach Fertigstellung: committen, auf Branch pushen und per PR nach `main` bringen
+- Gleiches gilt für **alle weiteren** Bewerbungen: immer eigener Unterordner unter `applications/`, immer auf GitHub
