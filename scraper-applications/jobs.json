@@ -1,117 +1,309 @@
 {
   "meta": {
-    "quelle": "jobs.ch",
-    "suchbegriff": "Verkäufer",
-    "standort": "Bern",
-    "max_results": 15,
-    "such_url": "https://www.jobs.ch/de/stellenangebote/?term=Verk%C3%A4ufer&location=Bern"
+    "standort_referenz": "Oberbottigen / Bottigenstrasse 300, Bern",
+    "radius_km": 10,
+    "suchbegriffe": [
+      "Verkäufer",
+      "Service",
+      "Kassierer",
+      "Aushilfe",
+      "Verkaufsberater",
+      "Gastgeber",
+      "Mitarbeit Verkauf",
+      "Quereinsteiger",
+      "Denner",
+      "Lidl",
+      "k kiosk",
+      "Galaxus",
+      "Coop",
+      "LOEB",
+      "MediaMarkt",
+      "Service Ostermundigen"
+    ],
+    "quellen": [
+      "jobs.ch (radius 10km)",
+      "jobs.migros.ch",
+      "career.valora.com",
+      "team.lidl.ch",
+      "Google / JobScout24 / jobborse.ch"
+    ],
+    "datum": "2026-09-22",
+    "hinweis": "Erweiterte Suche. Volle Listen unter /job-search/. Ordner >10km unter _ausserhalb-10km/."
   },
-  "count": 15,
-  "jobs": [
+  "count_innerhalb_10km": 57,
+  "count_bewerbungen_neu": 11,
+  "jobs_passend_einstieg_top": [
     {
-      "titel": "Automobil Verkäufer/in (Audi, Maserati & exklusive Occasionsfahrzeuge)",
-      "firma": "Automobile Nemeth AG",
-      "ort": "Hinterkappelen",
-      "veroeffentlicht": "Vor 3 Wochen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/89d5729a-0980-47b9-835d-ae1a618de604/"
+      "titel": "Kundendienstmitarbeiter:in Service",
+      "firma": "Fust | Swiss Household Services AG",
+      "ort": "Niederwangen BE",
+      "distanz_km": 1.4,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/aef10b3a-0d56-4f7b-ac7e-a3c8b16a8b6b/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Verkäuferin, Verkäufer",
-      "firma": "Volg Detailhandels AG",
-      "ort": "Kandersteg",
-      "veroeffentlicht": "Vor 6 Tagen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/937a13a8-e16a-4484-8ae4-1ddaf3be7213/"
+      "titel": "Verkäuferin / Verkäufer k kiosk 10 Std.",
+      "firma": "k kiosk (Valora)",
+      "ort": "Bern (Mühledorfstrasse / 3018)",
+      "distanz_km": 1.8,
+      "link": "https://career.valora.com/fr/job/6219/verkauferin-verkaufer-k-kiosk-10-std",
+      "quelle": "career.valora.com / Google Maps Standort 3018"
     },
     {
-      "titel": "Verkäuferin / Verkäufer",
-      "firma": "Volg Detailhandels AG",
-      "ort": "Reutigen",
-      "veroeffentlicht": "Vor 4 Tagen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/7ee0f3fc-bcd9-4270-924f-1129fbecd97b/"
+      "titel": "Retail Sales & Service Professional (w/m/d) 20-40%",
+      "firma": "Digitec Galaxus AG",
+      "ort": "Bern (Laupenstrasse 18, 3008)",
+      "distanz_km": 3.5,
+      "link": "https://jobs.migros.ch/de/unsere-unternehmen/job/galaxus/retail-sales-service-professional-wmd/8f09ae67-240c-4129-8bfe-59e02f5b0f05",
+      "quelle": "jobs.migros.ch"
     },
     {
-      "titel": "Verkäufer TopShop w/m/d",
-      "firma": "LANDI Aare Genossenschaft",
-      "ort": "Konolfingen",
-      "veroeffentlicht": "Vor 3 Wochen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/65ff7dce-45f8-4859-9026-264d9dc5276f/"
+      "titel": "Verkaufsberater/in 100% (w/m/d) im Shop Köniz",
+      "firma": "mobilezone ag",
+      "ort": "Köniz",
+      "distanz_km": 3.5,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/9b5ff1f5-2c2f-480c-9836-b7f844fdac21/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Verkäuferin, Verkäufer f/h/d",
-      "firma": "Volg Detailhandels AG",
-      "ort": "Blumenstein",
-      "veroeffentlicht": "Vor 4 Tagen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/bf1f8048-710e-4385-8efc-7ab41fbbadc3/"
+      "titel": "Verkaufsmitarbeiter:in mit Allroundfunktion",
+      "firma": "OTTO'S AG",
+      "ort": "Köniz",
+      "distanz_km": 3.5,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/9b353dad-d9c4-49cd-887f-90fa377f1885/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Verkäuferin / Verkäufer TopShop 60-80% w/m/d",
-      "firma": "LANDI Genossenschaften",
-      "ort": "Spiez",
-      "veroeffentlicht": "Letzte Woche",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/164c839d-b365-408c-a857-666485cd11cb/"
+      "titel": "Area Sales Manager",
+      "firma": "Merz & Benteli AG",
+      "ort": "Niederwangen b. Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/36768832-7b67-4516-bdcb-5b86265343b8/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Verkäuferin / Verkäufer Festservice & Getränke w/m/d",
-      "firma": "LANDI Genossenschaften",
-      "ort": "Laupen",
-      "veroeffentlicht": "Gestern",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/f5c27fe9-6237-4951-be7c-42510a0c9de1/"
-    },
-    {
-      "titel": "Verkäufer Heizung / Sanitär (w/m)",
-      "firma": "Meier Tobler AG",
-      "ort": "Region Bern/Solothurn",
-      "veroeffentlicht": "Vor 5 Tagen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/f4d2a7df-c529-4828-8af6-251282d2d152/"
-    },
-    {
-      "titel": "Salt Store Verkäufer-/Verkäuferin Bern 100%",
-      "firma": "Salt Mobile SA",
-      "ort": "Bern, Fribourg, Solothurn",
-      "veroeffentlicht": "Vor 2 Wochen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/40598104-ff32-4510-8693-85655df32d9b/"
-    },
-    {
-      "titel": "Technischer Verkäufer im Außendienst - Berner Oberland",
-      "firma": "Rotho Blaas Schweiz GmbH",
+      "titel": "Aushilfe Verkauf/Kasse Lebensmittel ca. 40-60%",
+      "firma": "LOEB AG",
       "ort": "Bern",
-      "veroeffentlicht": "Letzte Woche",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/b85faeae-3adc-4815-85c5-c5a35406287f/"
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/8f520e58-ba3f-43ec-b759-c55516d53e81/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Verkäufer/in 20-60% (m/w/d) für Bern im Stundenlohn",
-      "firma": "Magic X Retail AG",
+      "titel": "Aushilfe Verkauf/Kasse Papeterie/Reisen ca. 60-80% befristet",
+      "firma": "LOEB AG",
       "ort": "Bern",
-      "veroeffentlicht": "Gestern",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/cd6dfd5d-5314-4405-b7ca-fe74eb18969e/"
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/dd33622b-a73f-48a4-a3ce-12213be5c0af/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Salt Store Vendeur/se - Verkäufer/in Bienne/Bi el 80%-100%",
-      "firma": "Salt Mobile SA",
-      "ort": "Bienne",
-      "veroeffentlicht": "Vor 3 Tagen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/05e7794b-a12a-4bd8-9490-826e7ac5fada/"
+      "titel": "Aushilfe Verkäufer:in Aufbereitung Textil/Sport",
+      "firma": "OTTO'S AG",
+      "ort": "Bern-Bethlehem",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/fe141198-3a82-4638-925d-e413d32b001c/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Salt Store Vendeur/se - Verkäufer/in Bienne/Bi el 80%-100%",
-      "firma": "Salt Mobile SA",
-      "ort": "Bienne",
-      "veroeffentlicht": "Vor 2 Wochen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/2f44f267-1712-4bb7-bd1b-0f770bd28817/"
+      "titel": "Aushilfe Verkäufer:in Parfüm/Kosmetik",
+      "firma": "OTTO'S AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/ddc455c6-fdad-447d-a15f-0116b9bd618e/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Verkäufer/in 30-40% (m/w/d) für Lyssach im Stundenlohn",
-      "firma": "Magic X Retail AG",
-      "ort": "Lyssach",
-      "veroeffentlicht": "Vor 4 Wochen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/9c92ca33-fa16-45f0-8ff0-08942bfff6cb/"
+      "titel": "Co-Bereichsleitung IT-Services - Service & Organisation 80-100%",
+      "firma": "FinITia AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/48007a08-7059-4fce-8b1d-56531a41f86a/",
+      "quelle": "jobs.ch"
     },
     {
-      "titel": "Leiter Marché | Verkäufer Heizung / Sanitär (w/m)",
-      "firma": "Meier Tobler AG",
-      "ort": "Thun",
-      "veroeffentlicht": "Vor 5 Tagen",
-      "link": "https://www.jobs.ch/de/stellenangebote/detail/7e4ad1c5-e0d9-44c6-bb0a-2d497dc8b519/"
+      "titel": "Customer Service & Systems Integration Associate",
+      "firma": "Sonic Suisse Labs SA",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/40ffa2f7-3ea7-4dcd-892e-e9878495708f/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Fachleitung Category Management, Sales & Einkauf Bärner Brocki (80%)",
+      "firma": "GEWA",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/88d44271-da56-469a-85ca-49afa5ab920a/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Fachmitarbeiter/in Service Desk 80-100%",
+      "firma": "Schweizer Alpen-Club SAC",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/1c9886f6-8ade-4de0-9970-20cd55459999/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Gastronom:in",
+      "firma": "Mille Sens Groupe AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/cfe8b458-8696-428c-8974-f168f4276d7a/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Gastronomie Allrounder (d/w/m) Aushilfe im Stundenlohn",
+      "firma": "SV (Schweiz) AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/2e2607d4-0c31-4505-a3dd-68f472bf5e58/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Lehre Systemgastronomiefachmann EFZ (d/w/m)",
+      "firma": "SV (Schweiz) AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/c2113c58-6791-49fa-8eac-c560c5345c1d/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Mitarbeiter/-in Kasse 100%",
+      "firma": "Demaurex & Co AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/4891bf22-621b-49bb-8a7a-76d30a8f2d80/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Recruitment & Sales Consultant m/w/d/ 100%",
+      "firma": "das team ag",
+      "ort": "Bern (3012 Bern)",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/d7000857-4e45-4bc6-99c0-73cd865ea736/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "SERVICE TECHNICIAN",
+      "firma": "Elcotherm AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/1ef890d8-cf71-4f2e-90e8-70a11152f82e/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Sales Advisor (m/w/d) - Bern (30% - 12 Wochenstuden)",
+      "firma": "H&M Hennes & Mauritz AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/340a6c37-f69a-4f8a-be25-1a3ed2e36439/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Sales Advisor (m/w/d) - Bern (60% - 24 Wochenstuden)",
+      "firma": "H&M Hennes & Mauritz AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/90a3d155-79e7-4b28-80f0-cd0691687570/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Senior Spezialist für Service Management und Workplace (76072)",
+      "firma": "IQ Plus AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/e56e02cc-8196-44a7-af6c-f30f8e2a5f38/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "ServicemitarbeiterIn",
+      "firma": "Bindella terra vite vita SA",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/e2df00ac-09b2-4a1c-ad2c-b79e7feaa669/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Teamleiter:in Service Storenbranche",
+      "firma": "Griesser AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/f3c40808-8eab-4072-826a-457464f5579d/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Verkaufsberaterin 60-80%, Filiale in Bern",
+      "firma": "Beldona AG Hauptsitz",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/e4a9dc7c-a840-48fd-b2c0-a1139d5f1259/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Verkäuferin / Verkaufsberaterin (m/w/d) gesucht – Ab sofort in Festanstellung!",
+      "firma": "Bestpersonal Elkayam",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/524175f2-4045-468f-ab50-6dc3fb0687ef/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Verkäuferin / Verkäufer k kiosk 32 Std.",
+      "firma": "k kiosk (Valora)",
+      "ort": "Bern (Hirschengraben 24, 3011)",
+      "distanz_km": 5.0,
+      "link": "https://career.valora.com/de/job/6334/verkauferin-verkaufer-k-kiosk-32-std",
+      "quelle": "career.valora.com"
+    },
+    {
+      "titel": "Verkäufer:in Food (Kiosk) 80-100%",
+      "firma": "Coop",
+      "ort": "Bern (Kasparstrasse 7+9)",
+      "distanz_km": 5.5,
+      "link": "https://www.jobs.ch/en/vacancies/detail/627f5a80-9d26-4be7-b61e-a08178fd761c/",
+      "quelle": "jobs.ch / JobScout24"
+    },
+    {
+      "titel": "Verkäuferin / Verkäufer k kiosk 20 Std.",
+      "firma": "k kiosk (Valora)",
+      "ort": "Bern (Breitenrainplatz, 3014)",
+      "distanz_km": 6.5,
+      "link": "https://career.valora.com/de/job/5951/verkauferin-verkaufer-k-kiosk-20-std",
+      "quelle": "career.valora.com"
+    },
+    {
+      "titel": "Fitness Instructor (w/m/d) Aushilfe",
+      "firma": "Fitnesspark",
+      "ort": "Ostermundigen",
+      "distanz_km": 8.3,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/8ff3ee09-0c7c-4c83-8cd2-f6cc426ea09f/",
+      "quelle": "jobs.ch"
+    },
+    {
+      "titel": "Servicemitarbeiter/in",
+      "firma": "Luce Tower Ristorante",
+      "ort": "Ostermundigen",
+      "distanz_km": 8.3,
+      "link": "https://jobborse.ch/servicemitarbeiter_ostermundigen-c118480/2026-09-luce-tower-ristorante_i4208051630",
+      "quelle": "jobborse.ch / Google"
+    },
+    {
+      "titel": "Mitarbeiter*in Kasse & Kundendienst 100%",
+      "firma": "MediaMarkt",
+      "ort": "Gümligen / Muri bei Bern",
+      "distanz_km": 10.0,
+      "link": "https://www.jobijoba.ch/detailanzeige/93/edb0f4764cc17fc876208f5b634c1ff1",
+      "quelle": "Jobijoba / MediaMarkt"
+    },
+    {
+      "titel": "Verkaufsberater 100%",
+      "firma": "MediaMarkt",
+      "ort": "Gümligen / Muri bei Bern",
+      "distanz_km": 10.0,
+      "link": "https://www.mediamarkt.ch/de/shop/unternehmen/karriere.html",
+      "quelle": "bestehende Bewerbung"
     }
   ]
 }
