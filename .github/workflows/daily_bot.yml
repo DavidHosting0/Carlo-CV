@@ -1,0 +1,50 @@
+name: Daily Job Bot
+
+on:
+  schedule:
+    # 07:30 Swiss time (CET/CEST) ≈ 05:30 UTC (winter) / 06:30 UTC (summer).
+    # Cron uses UTC; 05:30 matches the requested Swiss winter schedule.
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: playwright install chromium --with-deps
+
+      - name: Run daily bot
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
+
+      - name: Commit and push sent_jobs.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sent_jobs.json
+          if git diff --staged --quiet; then
+            echo "No changes to sent_jobs.json"
+          else
+            git commit -m "chore: update sent_jobs.json after daily bot run"
+            git push
+          fi
