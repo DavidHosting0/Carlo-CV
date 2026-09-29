@@ -19,6 +19,9 @@
     jobSearch: "",
     jobMappe: "alle",
   };
+  var mapInstance = null;
+  var mapMarkersLayer = null;
+  var mapDidFit = false;
 
   function loadStatuses() {
     try {
@@ -164,7 +167,7 @@
       .map(function (item) {
         var status = getStatus(item.id);
         var stand = formatStand(item.stand);
-        var metaParts = [item.firma, item.ort];
+        var metaParts = [item.firma, item.adresse || item.ort];
         if (stand) metaParts.push("Stand " + stand);
         return (
           '<article class="row" data-id="' +
@@ -262,6 +265,105 @@
     renderStats();
     renderBewerbungen();
     renderJobs();
+    if (mapInstance) {
+      refreshMapMarkers(false);
+    }
+  }
+
+  function markerIcon(quelle) {
+    var kind = quelle === "kuratiert" ? "kuratiert" : "scraper";
+    return L.divIcon({
+      className: "",
+      html: '<div class="marker-pin marker-pin--' + kind + '"></div>',
+      iconSize: [16, 16],
+      iconAnchor: [8, 16],
+      popupAnchor: [0, -12],
+    });
+  }
+
+  function popupHtml(item) {
+    var status = getStatus(item.id);
+    var links =
+      '<div class="map-popup__actions">' +
+      '<a class="link-btn" href="' +
+      escapeHtml(item.mappe) +
+      '">Mappe</a>' +
+      (item.link
+        ? '<a class="link-btn" href="' +
+          escapeHtml(item.link) +
+          '" target="_blank" rel="noopener noreferrer">Stelle</a>'
+        : "") +
+      "</div>";
+    return (
+      '<div class="map-popup">' +
+      '<p class="map-popup__title">' +
+      escapeHtml(item.titel) +
+      "</p>" +
+      '<p class="map-popup__meta">' +
+      escapeHtml(item.firma) +
+      " · " +
+      escapeHtml(statusLabel(status)) +
+      "</p>" +
+      '<p class="map-popup__adresse">' +
+      escapeHtml(item.adresse || item.ort) +
+      "</p>" +
+      '<div class="badges">' +
+      '<span class="badge">' +
+      escapeHtml(item.quelle) +
+      "</span>" +
+      "</div>" +
+      links +
+      "</div>"
+    );
+  }
+
+  function refreshMapMarkers(fit) {
+    if (!mapInstance || typeof L === "undefined") return;
+    if (mapMarkersLayer) {
+      mapMarkersLayer.clearLayers();
+    } else {
+      mapMarkersLayer = L.layerGroup().addTo(mapInstance);
+    }
+    var bounds = [];
+    data.bewerbungen.forEach(function (item) {
+      if (typeof item.lat !== "number" || typeof item.lng !== "number") return;
+      var marker = L.marker([item.lat, item.lng], {
+        icon: markerIcon(item.quelle),
+        title: item.firma + " – " + item.titel,
+      });
+      marker.bindPopup(popupHtml(item));
+      mapMarkersLayer.addLayer(marker);
+      bounds.push([item.lat, item.lng]);
+    });
+    if (fit && bounds.length) {
+      mapInstance.fitBounds(bounds, { padding: [36, 36], maxZoom: 12 });
+      mapDidFit = true;
+    }
+  }
+
+  function ensureMap() {
+    if (typeof L === "undefined") return;
+    if (mapInstance) {
+      setTimeout(function () {
+        mapInstance.invalidateSize();
+      }, 50);
+      return;
+    }
+    mapInstance = L.map("map", {
+      scrollWheelZoom: true,
+    }).setView([46.948, 7.4474], 10);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(mapInstance);
+    refreshMapMarkers(true);
+    setTimeout(function () {
+      mapInstance.invalidateSize();
+      if (mapDidFit) {
+        refreshMapMarkers(true);
+      }
+    }, 80);
   }
 
   function setTab(tab) {
@@ -271,6 +373,10 @@
     });
     document.getElementById("panel-bewerbungen").hidden = tab !== "bewerbungen";
     document.getElementById("panel-jobs").hidden = tab !== "jobs";
+    document.getElementById("panel-karte").hidden = tab !== "karte";
+    if (tab === "karte") {
+      ensureMap();
+    }
   }
 
   function bind() {
