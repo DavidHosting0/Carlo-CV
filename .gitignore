@@ -1,0 +1,9 @@
+# Mail-Tracker secrets & local state
+mail-tracker/.env
+mail-tracker/data/status.json
+mail-tracker/node_modules/
+
+# Local tooling
+_pdf_preview/node_modules/
+*.log
+.DS_Store

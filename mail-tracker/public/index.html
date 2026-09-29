@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bewerbungs-Status</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div>
+        <p class="brand">Carlo CV</p>
+        <h1>Bewerbungs-Status</h1>
+        <p class="sub" id="meta">Lade…</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter">
+        <button type="button" data-filter="all" class="active">Alle</button>
+        <button type="button" data-filter="offen">Offen</button>
+        <button type="button" data-filter="zusage">Zusage</button>
+        <button type="button" data-filter="absage">Absage</button>
+        <button type="button" data-filter="unklar">Unklar</button>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="list-title">
+        <h2 id="list-title" class="sr-only">Bewerbungen</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Firma</th>
+                <th>Stelle</th>
+                <th>Status</th>
+                <th>Datum</th>
+                <th>Mail</th>
+                <th>Override</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="unmatched" aria-labelledby="unmatched-title">
+        <h2 id="unmatched-title">Nicht zugeordnete Bewerbungsmails</h2>
+        <ul id="unmatched"></ul>
+      </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
