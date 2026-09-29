@@ -23,7 +23,24 @@
       <header class="topbar">
         <div>
           <h1 class="brand">Carlo CV</h1>
-          <p class="brand-sub">Bewerbungen &amp; gefundene Stellen</p>
+          <p class="brand-sub">Bewerbungen &amp; analysierte Stellen</p>
+        </div>
+        <div class="topbar-actions">
+          <p class="live-meta" id="live-meta" aria-live="polite">Lade Live-Jobs…</p>
+          <div class="topbar-buttons">
+            <button type="button" class="btn" id="btn-refresh-live">
+              Aktualisieren
+            </button>
+            <a
+              class="btn btn--ghost"
+              id="link-run-scraper"
+              href="https://github.com/DavidHosting0/Carlo-CV/actions/workflows/refresh-jobs.yml"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Neue Jobs holen
+            </a>
+          </div>
         </div>
       </header>
 
@@ -109,12 +126,18 @@
             placeholder="Suche Firma, Titel, Ort…"
             aria-label="Jobs durchsuchen"
           />
-          <select id="job-mappe" aria-label="Mappe filtern">
-            <option value="alle">Alle Jobs</option>
-            <option value="mit">Mit Mappe</option>
-            <option value="ohne">Ohne Mappe</option>
+          <select id="job-score" aria-label="Score filtern">
+            <option value="alle">Alle Scores</option>
+            <option value="high">Score 8–10</option>
+            <option value="mid">Score 5–7</option>
+            <option value="low">Score 1–4</option>
           </select>
         </div>
+        <p class="panel-hint">
+          Analysierte Treffer aus
+          <code>dashboard/live-jobs.json</code>. „Aktualisieren“ lädt die Datei neu;
+          echte Neusuche auf jobs.ch über GitHub Action „Refresh scraped jobs“.
+        </p>
         <div class="list" id="jobs-list"></div>
       </section>
 
@@ -127,18 +150,22 @@
       >
         <div class="map-legend" aria-label="Legende">
           <span class="map-legend__item map-legend__item--kuratiert">Kuratiert</span>
-          <span class="map-legend__item map-legend__item--scraper">Scraper</span>
+          <span class="map-legend__item map-legend__item--scraper">Scraper-Mappe</span>
+          <span class="map-legend__item map-legend__item--score-high">Analyse 8–10</span>
+          <span class="map-legend__item map-legend__item--score-mid">Analyse 5–7</span>
+          <span class="map-legend__item map-legend__item--score-low">Analyse 1–4</span>
         </div>
         <div id="map" class="map" role="application" aria-label="Karte der Job-Standorte in der Region Bern"></div>
         <p class="map-note">
-          Pins basieren auf den Adressen aus den Stellenangaben. Unscharfe Regionen
-          (z.&nbsp;B. Aussendienst) sind als Ankerpunkt markiert.
+          Braune/olivgrüne Pins = Bewerbungsmappen. Grün/amber/grau = analysierte
+          Live-Jobs nach Score. Unscharfe Regionen sind als Ankerpunkt markiert.
         </p>
       </section>
 
       <p class="footnote">
-        Status wird lokal im Browser gespeichert. Datenpflege über
-        <code>dashboard/data.js</code>.
+        Status wird lokal im Browser gespeichert. Bewerbungsmappen in
+        <code>dashboard/data.js</code>; Live-Analyse in
+        <code>dashboard/live-jobs.json</code> (Scraper-Pipeline).
       </p>
     </div>
 
