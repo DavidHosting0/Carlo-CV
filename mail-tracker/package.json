@@ -1,0 +1,22 @@
+{
+  "name": "mail-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bluewin IMAP Bewerbungs-Status: Zu-/Absagen lokal tracken",
+  "type": "module",
+  "scripts": {
+    "index": "node src/build-index.js",
+    "sync": "node src/sync.js",
+    "dash": "node src/server.js",
+    "selfcheck": "node src/selfcheck.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "imapflow": "^1.0.181",
+    "mailparser": "^3.7.2"
+  }
+}

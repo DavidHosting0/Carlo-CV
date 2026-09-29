@@ -6,6 +6,11 @@ evaluated_jobs.json
 jobs.json
 .geocode-cache.json
 
+# Mail-Tracker secrets & local state
+mail-tracker/.env
+mail-tracker/data/status.json
+mail-tracker/node_modules/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -15,3 +20,8 @@ venv/
 # Playwright
 playwright-report/
 test-results/
+
+# Local tooling
+_pdf_preview/node_modules/
+*.log
+.DS_Store

@@ -1,0 +1,10 @@
+{
+  "name": "carlo-cv",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "mail:index": "npm --prefix mail-tracker run index",
+    "mail:sync": "npm --prefix mail-tracker run sync"
+  }
+}
