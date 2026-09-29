@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap");
+
+:root {
+  --bg0: #1a2330;
+  --bg1: #243044;
+  --ink: #f2efe8;
+  --muted: #a8b3c4;
+  --line: rgba(242, 239, 232, 0.12);
+  --zusage: #3d9a6a;
+  --absage: #c45c4a;
+  --offen: #7a8799;
+  --unklar: #c9a24a;
+  --accent: #d4e4f7;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  --font-body: "Source Sans 3", "Source Sans Pro", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #2f4560 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #3a2f28 0%, transparent 50%),
+    linear-gradient(165deg, var(--bg0), var(--bg1));
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  justify-content: space-between;
+  align-items: end;
+  padding: 2rem clamp(1rem, 4vw, 2.5rem) 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  margin: 0.15rem 0 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.sub {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.filters button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.4rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.filters button.active,
+.filters button:hover {
+  background: rgba(212, 228, 247, 0.12);
+  border-color: rgba(212, 228, 247, 0.35);
+}
+
+main {
+  padding: 1.25rem clamp(1rem, 4vw, 2.5rem) 3rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-top: 1px solid var(--line);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.75rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.firma {
+  font-weight: 600;
+}
+
+.ort {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 4.5rem;
+  text-align: center;
+  padding: 0.2rem 0.45rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.badge.offen {
+  background: color-mix(in srgb, var(--offen) 35%, transparent);
+  color: #d7dde6;
+}
+.badge.zusage {
+  background: color-mix(in srgb, var(--zusage) 40%, transparent);
+  color: #d8f5e6;
+}
+.badge.absage {
+  background: color-mix(in srgb, var(--absage) 40%, transparent);
+  color: #f8ddd8;
+}
+.badge.unklar {
+  background: color-mix(in srgb, var(--unklar) 35%, transparent);
+  color: #f5e8c8;
+}
+
+.snippet {
+  color: var(--muted);
+  max-width: 28rem;
+  line-height: 1.35;
+}
+
+.subject {
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.override {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.override button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  padding: 0.25rem 0.45rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.override button:hover {
+  background: rgba(212, 228, 247, 0.1);
+}
+
+.manual {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--unklar);
+}
+
+.unmatched {
+  margin-top: 2.5rem;
+}
+
+.unmatched h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+}
+
+.unmatched ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.unmatched li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.unmatched .meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 720px) {
+  th:nth-child(4),
+  td:nth-child(4) {
+    display: none;
+  }
+}

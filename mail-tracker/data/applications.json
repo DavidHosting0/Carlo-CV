@@ -1,0 +1,342 @@
+{
+  "generatedAt": "2026-09-29T17:38:28.066Z",
+  "count": 20,
+  "applications": [
+    {
+      "id": "automobile-nemeth-hinterkappelen",
+      "firma": "Automobile Nemeth AG",
+      "titel": "Automobil Verkäufer/in (Audi, Maserati & Occasionsfahrzeuge)",
+      "ziel": "Automobil Verkäufer",
+      "ort": "Hinterkappelen",
+      "arbeitgeber": "Automobile Nemeth AG, Hinterkappelen",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/automobile-nemeth-hinterkappelen",
+      "aliases": [
+        "Automobile Nemeth AG, Hinterkappelen",
+        "automobile",
+        "Automobile Nemeth AG",
+        "Automobile Nemeth AG, Hinterkappelen",
+        "Automobil Verkäufer"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/89d5729a-0980-47b9-835d-ae1a618de604/"
+    },
+    {
+      "id": "denner-bern-riedbach",
+      "firma": "Denner AG Filiale 1321",
+      "titel": "Verkäufer 80-100%",
+      "ziel": "Verkäufer 80-100%",
+      "ort": "3027 Bern",
+      "arbeitgeber": "Denner AG Filiale 1321, Riedbachstrasse 100, 3027 Bern",
+      "quelle": "applications",
+      "folder": "applications/denner-bern-riedbach",
+      "aliases": [
+        "Denner AG Filiale 1321, Riedbachstrasse 100, 3027 Bern",
+        "denner"
+      ]
+    },
+    {
+      "id": "erupt-lounge-bern",
+      "firma": "ERUPT AG",
+      "titel": "Vollzeit Lounge Host / Gästebetreuung",
+      "ziel": "Vollzeit Lounge Host / Gästebetreuung",
+      "ort": "3012 Bern",
+      "arbeitgeber": "ERUPT AG - Parkterrasse 14, 3012 Bern",
+      "quelle": "applications",
+      "folder": "applications/erupt-lounge-bern",
+      "aliases": [
+        "ERUPT AG - Parkterrasse 14, 3012 Bern",
+        "erupt"
+      ]
+    },
+    {
+      "id": "fusion-arena-bern",
+      "firma": "Fusion Arena Bern GmbH",
+      "titel": "Mitarbeit im Team (Gastgeber / VR Host)",
+      "ziel": "Mitarbeit im Team (Gastgeber / VR Host)",
+      "ort": "3011 Bern",
+      "arbeitgeber": "Fusion Arena Bern GmbH - Zeughausgasse 27, 3011 Bern",
+      "quelle": "applications",
+      "folder": "applications/fusion-arena-bern",
+      "aliases": [
+        "Fusion Arena Bern GmbH - Zeughausgasse 27, 3011 Bern",
+        "fusion"
+      ]
+    },
+    {
+      "id": "landi-konolfingen",
+      "firma": "LANDI Aare Genossenschaft",
+      "titel": "Verkäufer TopShop w/m/d",
+      "ziel": "Verkäufer TopShop",
+      "ort": "Konolfingen",
+      "arbeitgeber": "LANDI Aare Genossenschaft, Konolfingen",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/landi-konolfingen",
+      "aliases": [
+        "LANDI Aare Genossenschaft, Konolfingen",
+        "landi",
+        "LANDI Aare Genossenschaft",
+        "LANDI Aare Genossenschaft, Konolfingen",
+        "Verkäufer TopShop"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/65ff7dce-45f8-4859-9026-264d9dc5276f/"
+    },
+    {
+      "id": "landi-laupen",
+      "firma": "LANDI Genossenschaften",
+      "titel": "Verkäuferin / Verkäufer Festservice & Getränke w/m/d",
+      "ziel": "Verkäufer Festservice & Getränke",
+      "ort": "Laupen",
+      "arbeitgeber": "LANDI Genossenschaften, Laupen",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/landi-laupen",
+      "aliases": [
+        "LANDI Genossenschaften, Laupen",
+        "landi",
+        "LANDI Genossenschaften",
+        "LANDI Genossenschaften, Laupen",
+        "Verkäufer Festservice & Getränke"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/f5c27fe9-6237-4951-be7c-42510a0c9de1/"
+    },
+    {
+      "id": "landi-spiez",
+      "firma": "LANDI Genossenschaften",
+      "titel": "Verkäuferin / Verkäufer TopShop 60-80% w/m/d",
+      "ziel": "Verkäufer TopShop 60-80%",
+      "ort": "Spiez",
+      "arbeitgeber": "LANDI Genossenschaften, Spiez",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/landi-spiez",
+      "aliases": [
+        "LANDI Genossenschaften, Spiez",
+        "landi",
+        "LANDI Genossenschaften",
+        "LANDI Genossenschaften, Spiez",
+        "Verkäufer TopShop 60-80%"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/164c839d-b365-408c-a857-666485cd11cb/"
+    },
+    {
+      "id": "magic-x-bern",
+      "firma": "Magic X Retail AG",
+      "titel": "Verkäufer/in 20-60% (m/w/d) für Bern im Stundenlohn",
+      "ziel": "Verkäufer 20-60% (Stundenlohn)",
+      "ort": "Bern",
+      "arbeitgeber": "Magic X Retail AG, Bern",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/magic-x-bern",
+      "aliases": [
+        "Magic X Retail AG, Bern",
+        "magic",
+        "Magic X Retail AG",
+        "Magic X Retail AG, Bern",
+        "Verkäufer 20-60% (Stundenlohn)"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/cd6dfd5d-5314-4405-b7ca-fe74eb18969e/"
+    },
+    {
+      "id": "magic-x-lyssach",
+      "firma": "Magic X Retail AG",
+      "titel": "Verkäufer/in 30-40% (m/w/d) für Lyssach im Stundenlohn",
+      "ziel": "Verkäufer 30-40% (Stundenlohn)",
+      "ort": "Lyssach",
+      "arbeitgeber": "Magic X Retail AG, Lyssach",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/magic-x-lyssach",
+      "aliases": [
+        "Magic X Retail AG, Lyssach",
+        "magic",
+        "Magic X Retail AG",
+        "Magic X Retail AG, Lyssach",
+        "Verkäufer 30-40% (Stundenlohn)"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/9c92ca33-fa16-45f0-8ff0-08942bfff6cb/"
+    },
+    {
+      "id": "mediamarkt-guemligen",
+      "firma": "MediaMarkt Markt Gümligen / Muri Bern",
+      "titel": "Verkaufsberater 100% (m/w/d)",
+      "ziel": "Verkaufsberater 100% (m/w/d)",
+      "ort": "Guemligen",
+      "arbeitgeber": "MediaMarkt Markt Gümligen / Muri Bern",
+      "quelle": "applications",
+      "folder": "applications/mediamarkt-guemligen",
+      "aliases": [
+        "MediaMarkt Markt Gümligen / Muri Bern",
+        "mediamarkt"
+      ]
+    },
+    {
+      "id": "meier-tobler-bern-solothurn",
+      "firma": "Meier Tobler AG",
+      "titel": "Verkäufer Heizung / Sanitär (w/m)",
+      "ziel": "Verkäufer Heizung / Sanitär",
+      "ort": "Region Bern/Solothurn",
+      "arbeitgeber": "Meier Tobler AG, Region Bern/Solothurn",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/meier-tobler-bern-solothurn",
+      "aliases": [
+        "Meier Tobler AG, Region Bern/Solothurn",
+        "meier",
+        "Meier Tobler AG",
+        "Meier Tobler AG, Region Bern/Solothurn",
+        "Verkäufer Heizung / Sanitär"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/f4d2a7df-c529-4828-8af6-251282d2d152/"
+    },
+    {
+      "id": "meier-tobler-thun",
+      "firma": "Meier Tobler AG",
+      "titel": "Leiter Marché | Verkäufer Heizung / Sanitär (w/m)",
+      "ziel": "Verkäufer Heizung / Sanitär (Marché Thun)",
+      "ort": "Thun",
+      "arbeitgeber": "Meier Tobler AG, Thun",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/meier-tobler-thun",
+      "aliases": [
+        "Meier Tobler AG, Thun",
+        "meier",
+        "Meier Tobler AG",
+        "Meier Tobler AG, Thun",
+        "Verkäufer Heizung / Sanitär (Marché Thun)"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/7e4ad1c5-e0d9-44c6-bb0a-2d497dc8b519/"
+    },
+    {
+      "id": "rotho-blaas-bern",
+      "firma": "Rotho Blaas Schweiz GmbH",
+      "titel": "Technischer Verkäufer im Außendienst - Berner Oberland",
+      "ziel": "Technischer Verkäufer Außendienst",
+      "ort": "Bern / Berner Oberland",
+      "arbeitgeber": "Rotho Blaas Schweiz GmbH, Bern / Berner Oberland",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/rotho-blaas-bern",
+      "aliases": [
+        "Rotho Blaas Schweiz GmbH, Bern / Berner Oberland",
+        "rotho",
+        "Rotho Blaas Schweiz GmbH",
+        "Rotho Blaas Schweiz GmbH, Bern / Berner Oberland",
+        "Technischer Verkäufer Außendienst"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/b85faeae-3adc-4815-85c5-c5a35406287f/"
+    },
+    {
+      "id": "salt-bern",
+      "firma": "Salt Mobile SA",
+      "titel": "Salt Store Verkäufer-/Verkäuferin Bern 100%",
+      "ziel": "Salt Store Verkäufer 100%",
+      "ort": "Bern",
+      "arbeitgeber": "Salt Mobile SA, Salt Store Bern",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/salt-bern",
+      "aliases": [
+        "Salt Mobile SA, Salt Store Bern",
+        "salt",
+        "Salt Mobile SA",
+        "Salt Mobile SA, Salt Store Bern",
+        "Salt Store Verkäufer 100%"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/40598104-ff32-4510-8693-85655df32d9b/"
+    },
+    {
+      "id": "salt-bienne",
+      "firma": "Salt Mobile SA",
+      "titel": "Salt Store Verkäufer/in Bienne/Biel 80%-100%",
+      "ziel": "Salt Store Verkäufer 80-100%",
+      "ort": "Biel/Bienne",
+      "arbeitgeber": "Salt Mobile SA, Salt Store Biel/Bienne",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/salt-bienne",
+      "aliases": [
+        "Salt Mobile SA, Salt Store Biel/Bienne",
+        "salt",
+        "Salt Mobile SA",
+        "Salt Mobile SA, Salt Store Biel/Bienne",
+        "Salt Store Verkäufer 80-100%"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/05e7794b-a12a-4bd8-9490-826e7ac5fada/"
+    },
+    {
+      "id": "sando-bern",
+      "firma": "Sando BBZ Sàrl",
+      "titel": "Chef de Partie (Entwicklung zum Chef de Cuisine)",
+      "ziel": "Chef de Partie (Entwicklung zum Chef de Cuisine)",
+      "ort": "Sando Bern (Bubenbergplatz)",
+      "arbeitgeber": "Sando BBZ Sàrl - Sando Bern (Bubenbergplatz)",
+      "quelle": "applications",
+      "folder": "applications/sando-bern",
+      "aliases": [
+        "Sando BBZ Sàrl - Sando Bern (Bubenbergplatz)",
+        "sando"
+      ]
+    },
+    {
+      "id": "virtual-experience-bern",
+      "firma": "Virtual Experience GmbH",
+      "titel": "Mitarbeit im Team (Game Master / VR Host)",
+      "ziel": "Mitarbeit im Team (Game Master / VR Host)",
+      "ort": "3011 Bern",
+      "arbeitgeber": "Virtual Experience GmbH - Maulbeerstrasse 8, 3011 Bern",
+      "quelle": "applications",
+      "folder": "applications/virtual-experience-bern",
+      "aliases": [
+        "Virtual Experience GmbH - Maulbeerstrasse 8, 3011 Bern",
+        "virtual"
+      ]
+    },
+    {
+      "id": "volg-blumenstein",
+      "firma": "Volg Detailhandels AG",
+      "titel": "Verkäuferin, Verkäufer f/h/d",
+      "ziel": "Verkäufer",
+      "ort": "Blumenstein",
+      "arbeitgeber": "Volg Detailhandels AG, Blumenstein",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/volg-blumenstein",
+      "aliases": [
+        "Volg Detailhandels AG, Blumenstein",
+        "volg",
+        "Volg Detailhandels AG",
+        "Volg Detailhandels AG, Blumenstein",
+        "Verkäufer"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/bf1f8048-710e-4385-8efc-7ab41fbbadc3/"
+    },
+    {
+      "id": "volg-kandersteg",
+      "firma": "Volg Detailhandels AG",
+      "titel": "Verkäuferin, Verkäufer",
+      "ziel": "Verkäufer",
+      "ort": "Kandersteg",
+      "arbeitgeber": "Volg Detailhandels AG, Kandersteg",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/volg-kandersteg",
+      "aliases": [
+        "Volg Detailhandels AG, Kandersteg",
+        "volg",
+        "Volg Detailhandels AG",
+        "Volg Detailhandels AG, Kandersteg",
+        "Verkäufer"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/937a13a8-e16a-4484-8ae4-1ddaf3be7213/"
+    },
+    {
+      "id": "volg-reutigen",
+      "firma": "Volg Detailhandels AG",
+      "titel": "Verkäuferin / Verkäufer",
+      "ziel": "Verkäufer",
+      "ort": "Reutigen",
+      "arbeitgeber": "Volg Detailhandels AG, Reutigen",
+      "quelle": "scraper-applications",
+      "folder": "scraper-applications/volg-reutigen",
+      "aliases": [
+        "Volg Detailhandels AG, Reutigen",
+        "volg",
+        "Volg Detailhandels AG",
+        "Volg Detailhandels AG, Reutigen",
+        "Verkäufer"
+      ],
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/7ee0f3fc-bcd9-4270-924f-1129fbecd97b/"
+    }
+  ]
+}
