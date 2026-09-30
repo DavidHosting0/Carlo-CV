@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "standort_referenz": "Oberbottigen / Bottigenstrasse 300, Bern",
+    "radius_km": 10,
+    "datum": "2026-09-22",
+    "anschluss_an": "cursor/jobsearch-oberbottigen-10km-8ae7",
+    "suchbegriffe": [
+      "Verkäufer",
+      "Aushilfe",
+      "Kassierer",
+      "Service",
+      "OTTO'S",
+      "JYSK",
+      "Press & Books",
+      "LOEB",
+      "Photo Vision",
+      "ALIGRO",
+      "Schweizerhof",
+      "Lidl Kasse"
+    ]
+  },
+  "count": 10,
+  "jobs": [
+    {
+      "id": "ottos-koeniz",
+      "titel": "Verkaufsmitarbeiter:in mit Allroundfunktion 100%",
+      "firma": "OTTO'S AG",
+      "ort": "Köniz, Schwarzenburgstrasse 236",
+      "distanz_km": 3.5,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/9b353dad-d9c4-49cd-887f-90fa377f1885/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/ottos-koeniz/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "ottos-bern-bethlehem",
+      "titel": "Aushilfe Verkäufer:in Aufbereitung Textil/Sport 40-60%",
+      "firma": "OTTO'S AG",
+      "ort": "Bern-Bethlehem (3027)",
+      "distanz_km": 2.5,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/fe141198-3a82-4638-925d-e413d32b001c/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/ottos-bern-bethlehem/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "ottos-frauenkappelen",
+      "titel": "Aushilfe Verkäufer:in Food/Non-Food 60-80%",
+      "firma": "OTTO'S AG",
+      "ort": "Frauenkappelen (3202)",
+      "distanz_km": 6.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/4a171af4-32db-450a-b15c-5792b7c0ac70/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/ottos-frauenkappelen/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "press-books-bern",
+      "titel": "Verkäuferin / Verkäufer Press & Books 22 Std.",
+      "firma": "Press & Books / Valora Holding AG",
+      "ort": "Bern, Bahnhofplatz 10",
+      "distanz_km": 5.0,
+      "link": "https://career.valora.com/fr/job/6469/verkauferin-verkaufer-press-books-22-std",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/press-books-bern/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "jysk-muri-bern",
+      "titel": "Verkäufer/in (a) 20-40% Filiale Muri b. Bern (Mi-Sa)",
+      "firma": "JYSK GmbH",
+      "ort": "Muri bei Bern, Feldstrasse 32",
+      "distanz_km": 10.0,
+      "link": "https://jobs.de.jysk.ch/offene-stellen/verkaeuferin-20-40-der-filiale-muri-b-bern-mi-sa",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/jysk-muri-bern/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "loeb-bern-haushalt",
+      "titel": "Aushilfe Kasse/Verkauf Haushalt/Living ca. 40%",
+      "firma": "LOEB AG",
+      "ort": "Bern (Hauptbahnhof)",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/c987a0da-4d71-4a8b-a9aa-1650b81c7739/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/loeb-bern-haushalt/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "photo-vision-zumstein-bern",
+      "titel": "Verkäufer/in Foto und Videografie 80-100%",
+      "firma": "Photo Vision Zumstein AG",
+      "ort": "Bern, Casinoplatz 8",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/0f39ba31-c0aa-4497-888f-172c97e3a90f/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/photo-vision-zumstein-bern/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "demaurex-aligro-bern",
+      "titel": "Mitarbeiter/-in Kasse 100%",
+      "firma": "Demaurex & Co AG (ALIGRO)",
+      "ort": "Bern, Murtenstrasse 121",
+      "distanz_km": 2.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/4891bf22-621b-49bb-8a7a-76d30a8f2d80/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/demaurex-aligro-bern/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "hotel-schweizerhof-bern",
+      "titel": "Aushilfe F&B Service 40-60% (Stundenlohn)",
+      "firma": "Hotel Schweizerhof Bern AG",
+      "ort": "Bern, Bahnhofplatz 11",
+      "distanz_km": 5.0,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/ec2ac5ad-c677-4b60-aba4-9d86873d16e5/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/hotel-schweizerhof-bern/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    },
+    {
+      "id": "lidl-bern-kasse",
+      "titel": "Kassierer / Kassiererin (m/w/d) 40-60%",
+      "firma": "Lidl Schweiz AG",
+      "ort": "Bern",
+      "distanz_km": 4.9,
+      "link": "https://www.jobs.ch/de/stellenangebote/detail/996ea87a-8bbb-4638-a311-2f9df804de98/",
+      "innerhalb_10km": true,
+      "bewerbung": "applications/lidl-bern-kasse/",
+      "notiz": "Neu in Suche mehr-jobs (nicht in PR #7 enthalten)"
+    }
+  ]
+}
